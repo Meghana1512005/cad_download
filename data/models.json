@@ -50,7 +50,7 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -60,7 +60,7 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -100,9 +100,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null,
-    "sketchfab_name": null
+    "download_status": "Found on Sketchfab",
+    "sketchfab_id": "44e569c64dfd4f4d85e88a0c32f1bd49",
+    "sketchfab_name": "Day 110: Campground - 1scanaday"
   },
   {
     "uid": "BRZ-012",
@@ -379,9 +379,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 8,
-    "download_status": "Pending",
-    "sketchfab_id": null,
-    "sketchfab_name": null
+    "download_status": "Found on Sketchfab",
+    "sketchfab_id": "ed60862e215a498a9a214ca51af1bf32",
+    "sketchfab_name": "Pilatus Pc-21"
   },
   {
     "uid": "CHE-003",
@@ -389,7 +389,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -399,7 +399,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -409,7 +409,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 2,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -419,7 +419,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -429,7 +429,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 2,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -439,7 +439,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -449,7 +449,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 3,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -459,7 +459,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -469,7 +469,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -479,7 +479,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -489,7 +489,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 10,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -499,7 +499,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -509,7 +509,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 4,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -519,7 +519,7 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -529,7 +529,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -539,7 +539,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -549,7 +549,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -559,7 +559,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -569,7 +569,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -579,7 +579,7 @@
     "domain": "NAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -589,7 +589,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -599,7 +599,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -609,7 +609,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 3,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -619,7 +619,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -629,7 +629,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -639,7 +639,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -649,7 +649,7 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -659,7 +659,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -669,7 +669,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -679,7 +679,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -689,7 +689,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -699,7 +699,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -709,7 +709,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -719,7 +719,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -729,7 +729,7 @@
     "domain": "ART",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -849,7 +849,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -869,7 +869,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -888,7 +888,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -898,7 +898,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -908,7 +908,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -918,7 +918,7 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -947,9 +947,9 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null,
-    "sketchfab_name": null
+    "download_status": "Found on Sketchfab",
+    "sketchfab_id": "f7f8132ca4b644e59af1a7fca42c6b78",
+    "sketchfab_name": "16 Opait3l Domus FN"
   },
   {
     "uid": "CHN-045",
@@ -957,7 +957,7 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -967,7 +967,7 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
@@ -977,7 +977,7 @@
     "domain": "ALM",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Pending",
+    "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
