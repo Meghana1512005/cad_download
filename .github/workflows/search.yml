@@ -1,0 +1,42 @@
+name: 1 - Search Sketchfab for Models
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_start:
+        description: 'Start index (0 for first batch)'
+        required: false
+        default: '0'
+      batch_size:
+        description: 'Models to search per run (max 200)'
+        required: false
+        default: '100'
+  schedule:
+    - cron: '0 * * * *'   # Run every hour automatically
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Search Sketchfab
+        env:
+          SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
+          BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
+          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
+        run: python scripts/search_sketchfab.py
+
+      - name: Commit updated models.json
+        run: |
+          git config user.name  "CAD Bot"
+          git config user.email "bot@cad-downloader"
+          git add data/models.json
+          git diff --staged --quiet || git commit -m "Search batch ${{ github.event.inputs.batch_start || '0' }}: update model status"
+          git push

@@ -1,0 +1,50 @@
+name: 2 - Download GLB Models
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_start:
+        description: 'Queue start index (0 = first pending)'
+        required: false
+        default: '0'
+      batch_size:
+        description: 'Models to download per run (keep ≤50)'
+        required: false
+        default: '20'
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Download GLB files
+        env:
+          SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
+          BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
+          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
+        run: python scripts/download_glb.py
+
+      - name: Upload GLB files as release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: models-latest
+          name: Downloaded CAD Models
+          files: downloaded_models/*
+          fail_on_unmatched_files: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated status
+        run: |
+          git config user.name  "CAD Bot"
+          git config user.email "bot@cad-downloader"
+          git add data/models.json
+          git diff --staged --quiet || git commit -m "Download batch ${{ github.event.inputs.batch_start || '0' }}: update status"
+          git push
