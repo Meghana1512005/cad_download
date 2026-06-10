@@ -17,32 +17,36 @@ queue = [m for m in models
          if m.get("sketchfab_id")
          and m.get("download_status") not in ("Downloaded", "Download Failed", "Downloaded (shared model)")]
 batch = queue[BATCH_START: BATCH_START + BATCH_SIZE]
-print(f"Downloading {len(batch)} models (queue index {BATCH_START}–{BATCH_START+len(batch)-1})")
+print(f"Downloading {len(batch)} models")
 
-seen = {}   # sketchfab_id -> local path (avoids re-downloading same model)
+seen = {}
 downloaded = 0
 
 for m in batch:
-    uid   = m["uid"]           # e.g. BRZ-003
+    uid   = m["uid"]        # e.g. BRZ-003
     sf_id = m["sketchfab_id"]
 
-    # Same Sketchfab model used for multiple UIDs (e.g. BRZ-004 & BRZ-005)
+    # Create per-model folder:  downloaded_models/BRZ-003/
+    model_dir = os.path.join(OUT_DIR, uid)
+    os.makedirs(model_dir, exist_ok=True)
+
+    # Shared Sketchfab model (multiple UIDs, same GLB)
     if sf_id in seen:
         src_path = seen[sf_id]
         if src_path:
             ext   = os.path.splitext(src_path)[1]
-            fname = f"{uid}{ext}"           # BRZ-005.glb
-            dst   = os.path.join(OUT_DIR, fname)
+            fname = f"{uid}{ext}"
+            dst   = os.path.join(model_dir, fname)
             shutil.copy(src_path, dst)
             m["download_status"] = "Downloaded (shared model)"
-            m["local_file"]      = fname
-            print(f"  ✓ [{uid}] {fname}  (shared from {os.path.basename(src_path)})")
+            m["local_file"]      = os.path.join(uid, fname)
+            print(f"  ✓ [{uid}] {uid}/{fname}  (shared)")
             downloaded += 1
         else:
-            m["download_status"] = "Download Failed (shared model unavailable)"
+            m["download_status"] = "Download Failed (shared unavailable)"
         continue
 
-    print(f"  [{uid}] Fetching download URL...")
+    print(f"  [{uid}] Fetching URL...")
     r = requests.get(f"{BASE}/models/{sf_id}/download", headers=HEADERS, timeout=15)
     if r.status_code != 200:
         m["download_status"] = f"Download Failed ({r.status_code})"
@@ -50,12 +54,12 @@ for m in batch:
         print(f"    ✗ HTTP {r.status_code}")
         continue
 
-    data = r.json()
-    glb  = (data.get("glb")    or {}).get("url")
-    gltf = (data.get("gltf")   or {}).get("url")
-    src  = (data.get("source") or {}).get("url")
-    url  = glb or gltf or src
-    ext  = ".glb" if glb else ".zip"
+    data  = r.json()
+    glb   = (data.get("glb")    or {}).get("url")
+    gltf  = (data.get("gltf")   or {}).get("url")
+    src   = (data.get("source") or {}).get("url")
+    url   = glb or gltf or src
+    ext   = ".glb" if glb else ".zip"
 
     if not url:
         m["download_status"] = "Download Failed (no URL)"
@@ -63,21 +67,20 @@ for m in batch:
         continue
 
     sz_kb = ((data.get("glb") or data.get("gltf") or data.get("source") or {}).get("size", 0)) // 1024
-    print(f"    Downloading {sz_kb} KB → {uid}{ext}")
+    fname    = f"{uid}{ext}"                        # BRZ-003.glb
+    out_path = os.path.join(model_dir, fname)       # downloaded_models/BRZ-003/BRZ-003.glb
 
+    print(f"    Downloading {sz_kb} KB → {uid}/{fname}")
     dl = requests.get(url, stream=True, timeout=120)
     dl.raise_for_status()
-
-    fname    = f"{uid}{ext}"            # BRZ-003.glb
-    out_path = os.path.join(OUT_DIR, fname)
     with open(out_path, "wb") as f:
         for chunk in dl.iter_content(65536):
             f.write(chunk)
 
     actual_kb = os.path.getsize(out_path) // 1024
-    print(f"    ✓ {fname}  ({actual_kb} KB)")
+    print(f"    ✓ {uid}/{fname}  ({actual_kb} KB)")
     m["download_status"] = "Downloaded"
-    m["local_file"]      = fname
+    m["local_file"]      = os.path.join(uid, fname)
     seen[sf_id]          = out_path
     downloaded += 1
     time.sleep(0.5)
@@ -85,3 +88,9 @@ for m in batch:
 with open(DATA, "w") as f:
     json.dump(models, f, indent=2)
 print(f"\nDone — {downloaded}/{len(batch)} downloaded.")
+print(f"Folder structure:")
+for entry in sorted(os.listdir(OUT_DIR)):
+    p = os.path.join(OUT_DIR, entry)
+    if os.path.isdir(p):
+        files = os.listdir(p)
+        print(f"  {entry}/ → {files[0] if files else 'empty'}")
