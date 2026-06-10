@@ -37,12 +37,21 @@ jobs:
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
         run: python scripts/download_glb.py
 
+      - name: Collect GLBs for upload
+        run: |
+          mkdir -p release_files
+          find downloaded_models -name "*.glb" -o -name "*.zip" | while read f; do
+            cp "$f" release_files/
+          done
+          echo "Files to release:"
+          ls release_files/
+
       - name: Upload GLBs as release assets
         uses: softprops/action-gh-release@v2
         with:
           tag_name: models-latest
           name: Downloaded CAD Models
-          files: downloaded_models/*
+          files: release_files/*
           fail_on_unmatched_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
