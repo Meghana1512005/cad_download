@@ -319,9 +319,10 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 14,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "017824164b9e40749a67b87edbbcab92",
-    "sketchfab_name": "EMB-314 / A-29 \"Super Tucano\""
+    "sketchfab_name": "EMB-314 / A-29 \"Super Tucano\"",
+    "local_file": "BRZ-031/BRZ-031.glb"
   },
   {
     "uid": "BRZ-032",
@@ -329,9 +330,10 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded (shared model)",
     "sketchfab_id": "017824164b9e40749a67b87edbbcab92",
-    "sketchfab_name": "EMB-314 / A-29 \"Super Tucano\""
+    "sketchfab_name": "EMB-314 / A-29 \"Super Tucano\"",
+    "local_file": "BRZ-032/BRZ-032.glb"
   },
   {
     "uid": "BRZ-033",
@@ -339,9 +341,10 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 14,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B"
+    "sketchfab_name": "EMB-314 Super Tucano A29B",
+    "local_file": "BRZ-033/BRZ-033.glb"
   },
   {
     "uid": "BRZ-034",
@@ -359,9 +362,10 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 3,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B"
+    "sketchfab_name": "EMB-314 Super Tucano A29B",
+    "local_file": "BRZ-035/BRZ-035.glb"
   },
   {
     "uid": "BRZ-036",
@@ -369,9 +373,10 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B"
+    "sketchfab_name": "EMB-314 Super Tucano A29B",
+    "local_file": "BRZ-036/BRZ-036.glb"
   },
   {
     "uid": "BRZ-037",
@@ -388,9 +393,10 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 3,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "d8ab7be8b9794910930e7919d0bf3f5a",
-    "sketchfab_name": "Pilatus PC 12/47"
+    "sketchfab_name": "Pilatus PC 12/47",
+    "local_file": "CHE-001/CHE-001.glb"
   },
   {
     "uid": "CHE-002",
@@ -398,9 +404,10 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 8,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "ed60862e215a498a9a214ca51af1bf32",
-    "sketchfab_name": "Pilatus Pc-21"
+    "sketchfab_name": "Pilatus Pc-21",
+    "local_file": "CHE-002/CHE-002.glb"
   },
   {
     "uid": "CHE-003",
@@ -795,9 +802,10 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "fd705f99e66d4c3993dbbe7045671ac6",
-    "sketchfab_name": "DF-17 Missile"
+    "sketchfab_name": "DF-17 Missile",
+    "local_file": "CHN-026/CHN-026.glb"
   },
   {
     "uid": "CHN-027",
@@ -947,9 +955,10 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
+    "download_status": "Downloaded",
     "sketchfab_id": "2e324c9b3fae4da8ba65ada53ddd395c",
-    "sketchfab_name": "HQ-7B FM-90 SPAAML"
+    "sketchfab_name": "HQ-7B FM-90 SPAAML",
+    "local_file": "CHN-042/CHN-042.glb"
   },
   {
     "uid": "CHN-043",
