@@ -100,9 +100,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "44e569c64dfd4f4d85e88a0c32f1bd49",
-    "sketchfab_name": "Day 110: Campground - 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-012",
@@ -947,9 +947,9 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "f7f8132ca4b644e59af1a7fca42c6b78",
-    "sketchfab_name": "16 Opait3l Domus FN"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-045",
