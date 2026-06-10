@@ -32,7 +32,7 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 12,
-    "download_status": "Downloaded",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "e419e7f41d4f4722905bd85439add190",
     "local_file": "BRZ-004/BRZ-004.glb"
   },
@@ -42,7 +42,7 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "e419e7f41d4f4722905bd85439add190",
     "local_file": "BRZ-005/BRZ-005.glb"
   },
@@ -72,7 +72,7 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 22,
-    "download_status": "Downloaded",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "2f05880b56de4b329df28af52aa728b9",
     "sketchfab_name": "EE-9 Cascavel tank",
     "local_file": "BRZ-008/BRZ-008.glb"
@@ -93,7 +93,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-010/BRZ-010.glb"
@@ -114,7 +114,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-012/BRZ-012.glb"
@@ -135,7 +135,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-014/BRZ-014.glb"
@@ -156,7 +156,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-016/BRZ-016.glb"
@@ -167,7 +167,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-017/BRZ-017.glb"
@@ -188,7 +188,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-019/BRZ-019.glb"
@@ -199,7 +199,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-020/BRZ-020.glb"
@@ -210,7 +210,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 2,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-021/BRZ-021.glb"
@@ -221,7 +221,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 2,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-022/BRZ-022.glb"
@@ -232,7 +232,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-023/BRZ-023.glb"
@@ -243,7 +243,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-024/BRZ-024.glb"
@@ -254,7 +254,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-025/BRZ-025.glb"
@@ -265,7 +265,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 2,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-026/BRZ-026.glb"
@@ -276,7 +276,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-027/BRZ-027.glb"
@@ -297,7 +297,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-029/BRZ-029.glb"
@@ -308,7 +308,7 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Downloaded (shared model)",
+    "download_status": "Found on Sketchfab",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
     "sketchfab_name": "EMB-314 Super Tucano A29B",
     "local_file": "BRZ-030/BRZ-030.glb"
