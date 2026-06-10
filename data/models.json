@@ -80,9 +80,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "44e569c64dfd4f4d85e88a0c32f1bd49",
-    "sketchfab_name": "Day 110: Campground - 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-010",
@@ -120,9 +120,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "a7297c2e95fb46b491714b73913ee311",
-    "sketchfab_name": "Day 111: Gas station in Gorda - 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-014",
@@ -140,9 +140,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "4f2bb22eec6f4507baffc64c5a1f4b8d",
-    "sketchfab_name": "Day 120: Lombard Street! 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-016",
@@ -170,9 +170,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "20758578818f4e2790df6c4366ef15f1",
-    "sketchfab_name": "Day 121: Old fountain - 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-019",
@@ -270,9 +270,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cb6818eed495432f98f74b72e7446e04",
-    "sketchfab_name": "Day 190: LEGO X-wing Starfighter - 1scanaday"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-029",
@@ -330,9 +330,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "636667749f974c66a08f8c6893ce17bb",
-    "sketchfab_name": "Fiat 500 classic"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-035",
@@ -766,9 +766,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "4f49495205104c68aa719eb367915edd",
-    "sketchfab_name": "wwe son cold sv 3 16"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-026",
@@ -859,9 +859,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "1fc4b97cd0ab4dd99fb4db1aba135279",
-    "sketchfab_name": "2015 11 25-27 Simplified 3d Mesh"
+    "download_status": "Not Found",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-036",
