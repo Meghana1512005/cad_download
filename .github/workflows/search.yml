@@ -18,25 +18,36 @@ on:
   schedule:
     - cron: '0 * * * *'
 
+permissions:
+  contents: write
+
 jobs:
   search:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ github.token }}
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - run: pip install requests
+
       - name: Search Sketchfab
         env:
           SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
         run: python scripts/search_sketchfab.py
+
       - name: Commit results
         run: |
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
+          git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
-          git diff --staged --quiet || git commit -m "Search batch: update model status"
+          git diff --staged --quiet || git commit -m "Search batch ${{ github.event.inputs.batch_start || '0' }}: update model status"
           git push

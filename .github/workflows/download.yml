@@ -12,21 +12,31 @@ on:
         required: false
         default: '20'
 
+permissions:
+  contents: write
+
 jobs:
   download:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ github.token }}
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - run: pip install requests
+
       - name: Download GLB files
         env:
           SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
         run: python scripts/download_glb.py
+
       - name: Upload GLBs as release assets
         uses: softprops/action-gh-release@v2
         with:
@@ -36,10 +46,12 @@ jobs:
           fail_on_unmatched_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit status
         run: |
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
+          git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
-          git diff --staged --quiet || git commit -m "Download batch: update status"
+          git diff --staged --quiet || git commit -m "Download batch ${{ github.event.inputs.batch_start || '0' }}: update status"
           git push
