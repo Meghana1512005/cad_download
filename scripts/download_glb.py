@@ -19,25 +19,30 @@ queue = [m for m in models
 batch = queue[BATCH_START: BATCH_START + BATCH_SIZE]
 print(f"Downloading {len(batch)} models (queue index {BATCH_START}–{BATCH_START+len(batch)-1})")
 
-seen = {}
+seen = {}   # sketchfab_id -> local path (avoids re-downloading same model)
 downloaded = 0
 
 for m in batch:
-    uid_label = m["uid"]
-    sf_id     = m["sketchfab_id"]
-    safe_name = m["model_name"].replace(" ","_").replace("/","_")[:50]
+    uid   = m["uid"]           # e.g. BRZ-003
+    sf_id = m["sketchfab_id"]
 
-    if sf_id in seen and seen[sf_id]:
-        fname = f"{uid_label}_{safe_name}.glb"
-        dst = os.path.join(OUT_DIR, fname)
-        shutil.copy(seen[sf_id], dst)
-        m["download_status"] = "Downloaded (shared model)"
-        m["local_file"] = fname
-        print(f"  ✓ [{uid_label}] Reused from previous download")
-        downloaded += 1
+    # Same Sketchfab model used for multiple UIDs (e.g. BRZ-004 & BRZ-005)
+    if sf_id in seen:
+        src_path = seen[sf_id]
+        if src_path:
+            ext   = os.path.splitext(src_path)[1]
+            fname = f"{uid}{ext}"           # BRZ-005.glb
+            dst   = os.path.join(OUT_DIR, fname)
+            shutil.copy(src_path, dst)
+            m["download_status"] = "Downloaded (shared model)"
+            m["local_file"]      = fname
+            print(f"  ✓ [{uid}] {fname}  (shared from {os.path.basename(src_path)})")
+            downloaded += 1
+        else:
+            m["download_status"] = "Download Failed (shared model unavailable)"
         continue
 
-    print(f"  [{uid_label}] Fetching URL for {sf_id}...")
+    print(f"  [{uid}] Fetching download URL...")
     r = requests.get(f"{BASE}/models/{sf_id}/download", headers=HEADERS, timeout=15)
     if r.status_code != 200:
         m["download_status"] = f"Download Failed ({r.status_code})"
@@ -57,22 +62,23 @@ for m in batch:
         seen[sf_id] = None
         continue
 
-    sz = ((data.get("glb") or data.get("gltf") or data.get("source") or {}).get("size", 0)) // 1024
-    print(f"    Downloading {sz} KB...")
+    sz_kb = ((data.get("glb") or data.get("gltf") or data.get("source") or {}).get("size", 0)) // 1024
+    print(f"    Downloading {sz_kb} KB → {uid}{ext}")
+
     dl = requests.get(url, stream=True, timeout=120)
     dl.raise_for_status()
 
-    fname = f"{uid_label}_{safe_name}{ext}"
-    out   = os.path.join(OUT_DIR, fname)
-    with open(out, "wb") as f:
+    fname    = f"{uid}{ext}"            # BRZ-003.glb
+    out_path = os.path.join(OUT_DIR, fname)
+    with open(out_path, "wb") as f:
         for chunk in dl.iter_content(65536):
             f.write(chunk)
 
-    actual_kb = os.path.getsize(out) // 1024
-    print(f"    ✓ {fname} ({actual_kb} KB)")
+    actual_kb = os.path.getsize(out_path) // 1024
+    print(f"    ✓ {fname}  ({actual_kb} KB)")
     m["download_status"] = "Downloaded"
-    m["local_file"] = fname
-    seen[sf_id] = out
+    m["local_file"]      = fname
+    seen[sf_id]          = out_path
     downloaded += 1
     time.sleep(0.5)
 
