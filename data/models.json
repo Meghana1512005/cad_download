@@ -50,9 +50,9 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "7ef593b344624e6388eaa44b5551fad7",
-    "sketchfab_name": "damaged EE-9 Cascavel tank"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-007",
@@ -60,9 +60,9 @@
     "domain": "AFV",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "7ef593b344624e6388eaa44b5551fad7",
-    "sketchfab_name": "damaged EE-9 Cascavel tank"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-008",
@@ -100,9 +100,9 @@
     "domain": "AIR",
     "manufacturer": "BRZ",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "c3fce21cff474c03aaf02834dd938e21",
-    "sketchfab_name": "NATURAL STONES NECKLACE"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-012",
@@ -379,9 +379,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 8,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "411b4caaf62d420b8a7dc12fc1fe83cf",
-    "sketchfab_name": "Gaming PC Amazing 4"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-003",
@@ -389,9 +389,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-004",
@@ -399,9 +399,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-005",
@@ -409,9 +409,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 2,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "608e0f6ce5e9487eb859f48248e1fac4",
-    "sketchfab_name": "Apple Macintosh"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-006",
@@ -419,9 +419,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-007",
@@ -429,9 +429,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 2,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-008",
@@ -439,9 +439,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-009",
@@ -449,9 +449,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 3,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "b13c98ceef134febac09dacc51c005f7",
-    "sketchfab_name": "Pilatus PC-7 Mk I"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-010",
@@ -459,9 +459,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-011",
@@ -469,9 +469,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-012",
@@ -479,9 +479,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-013",
@@ -489,9 +489,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 10,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "b13c98ceef134febac09dacc51c005f7",
-    "sketchfab_name": "Pilatus PC-7 Mk I"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-014",
@@ -499,9 +499,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "91f495435f624d8b97a768f692aa6ce9",
-    "sketchfab_name": "Military Landvehicle Kit 1.2 (CC0)"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-015",
@@ -509,9 +509,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 4,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "394f7cf52d124bbd9db69f24d1ff2f08",
-    "sketchfab_name": "Falcon 9 - SpaceX"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHE-016",
@@ -519,9 +519,9 @@
     "domain": "AIR",
     "manufacturer": "CHE",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "59b501961deb4fa4a3ab4916182786db",
-    "sketchfab_name": "Beechcraft T6 Texan II"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-001",
@@ -529,9 +529,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "52801b48ed8b4907882071eacca57448",
-    "sketchfab_name": "Snavelkan, Italiaanse majolica uit Montelupo"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-002",
@@ -539,9 +539,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "52801b48ed8b4907882071eacca57448",
-    "sketchfab_name": "Snavelkan, Italiaanse majolica uit Montelupo"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-003",
@@ -549,9 +549,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "52801b48ed8b4907882071eacca57448",
-    "sketchfab_name": "Snavelkan, Italiaanse majolica uit Montelupo"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-004",
@@ -559,9 +559,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "52801b48ed8b4907882071eacca57448",
-    "sketchfab_name": "Snavelkan, Italiaanse majolica uit Montelupo"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-005",
@@ -569,9 +569,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "52801b48ed8b4907882071eacca57448",
-    "sketchfab_name": "Snavelkan, Italiaanse majolica uit Montelupo"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-006",
@@ -579,9 +579,9 @@
     "domain": "NAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cdac73e931f6482e86960a326fef73bf",
-    "sketchfab_name": "Boeing CH-47 Chinook Military Transport Aircraft"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-007",
@@ -589,9 +589,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "59738c5b533b41f9a77c9cad4100b6b9",
-    "sketchfab_name": "Modeled Maize God Head, Nixtun-Ch'ich'"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-008",
@@ -599,9 +599,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cdac73e931f6482e86960a326fef73bf",
-    "sketchfab_name": "Boeing CH-47 Chinook Military Transport Aircraft"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-009",
@@ -609,9 +609,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 3,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "2acc32fc79684a2c8b7df9faaa5a5c35",
-    "sketchfab_name": "BBS CH-R + Goodyear Eagle F1 Supercar 3"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-010",
@@ -619,9 +619,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "fd36446aa86144e1a981c3a5e8fa9d67",
-    "sketchfab_name": "Cube Cradle - Fortnite CH 7"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-011",
@@ -629,9 +629,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cdac73e931f6482e86960a326fef73bf",
-    "sketchfab_name": "Boeing CH-47 Chinook Military Transport Aircraft"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-012",
@@ -639,9 +639,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cdac73e931f6482e86960a326fef73bf",
-    "sketchfab_name": "Boeing CH-47 Chinook Military Transport Aircraft"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-013",
@@ -649,9 +649,9 @@
     "domain": "UAV",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cdac73e931f6482e86960a326fef73bf",
-    "sketchfab_name": "Boeing CH-47 Chinook Military Transport Aircraft"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-014",
@@ -659,9 +659,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5c090410ea544b72a6d265d1ede55795",
-    "sketchfab_name": "VEHICLE - JEEP WRANGLER"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-015",
@@ -669,9 +669,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5a5f3f537a2a45899a49c16f9e74f0d8",
-    "sketchfab_name": "Nintendo Game & Watch Tabletop - Donkey Kong Jr."
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-016",
@@ -679,9 +679,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "cc9423669b4244839e0b3e8f4e24caa1",
-    "sketchfab_name": "Plant Trichomes - Embedded In Amber"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-017",
@@ -689,9 +689,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "1cd1d89b499c4f9d8bb36a2b48b84772",
-    "sketchfab_name": "CJ 2A Willy Jeep Shifter Knob V2"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-018",
@@ -699,9 +699,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5c090410ea544b72a6d265d1ede55795",
-    "sketchfab_name": "VEHICLE - JEEP WRANGLER"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-019",
@@ -709,9 +709,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5c090410ea544b72a6d265d1ede55795",
-    "sketchfab_name": "VEHICLE - JEEP WRANGLER"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-020",
@@ -719,9 +719,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5c090410ea544b72a6d265d1ede55795",
-    "sketchfab_name": "VEHICLE - JEEP WRANGLER"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-021",
@@ -729,9 +729,9 @@
     "domain": "ART",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "47dc76e27ec747c791d05fe90d970ef5",
-    "sketchfab_name": "CS VN3C Blau"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-022",
@@ -849,9 +849,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "5155b85a5d2a4bc7a3e67051baef408b",
-    "sketchfab_name": "ESTRUTURA 3D - DANIEL YROSH"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-035",
@@ -869,9 +869,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "4f49495205104c68aa719eb367915edd",
-    "sketchfab_name": "wwe son cold sv 3 16"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-037",
@@ -888,9 +888,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "88651d0440fa4217bdfb556757e88ae2",
-    "sketchfab_name": "DF-5C"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-039",
@@ -898,9 +898,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "88651d0440fa4217bdfb556757e88ae2",
-    "sketchfab_name": "DF-5C"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-040",
@@ -908,9 +908,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "88651d0440fa4217bdfb556757e88ae2",
-    "sketchfab_name": "DF-5C"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-041",
@@ -918,9 +918,9 @@
     "domain": "MSL",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "88651d0440fa4217bdfb556757e88ae2",
-    "sketchfab_name": "DF-5C"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-042",
@@ -947,9 +947,9 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "9931c4b26dab4a878cdff7989731d25b",
-    "sketchfab_name": "FN SPR A3G"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-045",
@@ -957,9 +957,9 @@
     "domain": "ADS",
     "manufacturer": "CHN",
     "nations": 2,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "a121ee7df0ca44b58cd5228e6565dd93",
-    "sketchfab_name": "Low-Poly FN FAL"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-046",
@@ -967,9 +967,9 @@
     "domain": "AIR",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "07b448a2e9924f48a5fc1c91529f2280",
-    "sketchfab_name": "Xian H-6 Strategic Bomber"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-047",
@@ -977,9 +977,9 @@
     "domain": "ALM",
     "manufacturer": "CHN",
     "nations": 1,
-    "download_status": "Found on Sketchfab",
-    "sketchfab_id": "d203b678424a43568703bf85ba680f47",
-    "sketchfab_name": "Missile & Bomb Collection - Fighter Jets - Free"
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "CHN-048",
