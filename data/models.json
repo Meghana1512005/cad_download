@@ -4,173 +4,1000 @@
     "model_name": "ASTROS II Mk3",
     "domain": "ART",
     "manufacturer": "BRZ",
-    "nations": 2,
+    "countries": "Brazil, Qatar, Saudi Arabia",
     "download_status": "Not Found \u2014 Paid Only",
-    "sketchfab_id": null
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-002",
-    "model_name": "ASTROS II Mk3M",
-    "domain": "ART",
-    "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found \u2014 Paid Only",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "BRZ-003",
     "model_name": "ASTROS II Mk6",
     "domain": "ART",
     "manufacturer": "BRZ",
-    "nations": 2,
-    "download_status": "Download Failed (404)",
-    "sketchfab_id": "3bdf4c5bb54d4de590109c671eda4eb3"
+    "countries": "Brazil, Indonesia",
+    "download_status": "Not Found \u2014 Paid Only",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
-    "uid": "BRZ-004",
+    "uid": "BRZ-003",
     "model_name": "EE-11 Urutu",
     "domain": "AFV",
     "manufacturer": "BRZ",
-    "nations": 12,
+    "countries": "Bolivia, Brazil, Colombia, Ecuador, Gabon, Jordan, Kuwait, Panama, Paraguay, Senegal, Suriname, Tunisia, United Arab Emirates, Uruguay, Venezuela",
+    "download_status": "Download Failed (404)",
+    "sketchfab_id": "3bdf4c5bb54d4de590109c671eda4eb3",
+    "sketchfab_name": null
+  },
+  {
+    "uid": "BRZ-004",
+    "model_name": "EE-9 Cascavel",
+    "domain": "AFV",
+    "manufacturer": "BRZ",
+    "countries": "Bolivia, Brazil, Burkina Faso, Central African Republic, Chad, Colombia, Cyprus, DR Congo, Ecuador, Gabon, Ghana, Guyana, Iran, Iraq, Myanmar, Nigeria, Panama, Paraguay, Suriname, Togo, Uruguay, Zimbabwe",
     "download_status": "Downloaded",
     "sketchfab_id": "e419e7f41d4f4722905bd85439add190",
-    "local_file": "BRZ-004/BRZ-004.glb"
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-005",
-    "model_name": "EE-11 Urutu AAV",
-    "domain": "AFV",
+    "model_name": "EMB-110",
+    "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Brazil, Colombia, Uruguay",
     "download_status": "Downloaded (shared model)",
     "sketchfab_id": "e419e7f41d4f4722905bd85439add190",
-    "local_file": "BRZ-005/BRZ-005.glb"
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-006",
-    "model_name": "EE-11 Urutu ARTILLERY",
-    "domain": "AFV",
+    "model_name": "EMB-111",
+    "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Brazil, Chile",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-007",
-    "model_name": "EE-11 Urutu Guard",
-    "domain": "AFV",
+    "model_name": "EMB-120",
+    "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Brazil, Uruguay",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-008",
-    "model_name": "EE-9 Cascavel",
-    "domain": "AFV",
+    "model_name": "EMB-121",
+    "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 22,
+    "countries": "Brazil, Finland",
     "download_status": "Downloaded",
     "sketchfab_id": "2f05880b56de4b329df28af52aa728b9",
-    "sketchfab_name": "EE-9 Cascavel tank",
-    "local_file": "BRZ-008/BRZ-008.glb"
+    "sketchfab_name": "EE-9 Cascavel tank"
   },
   {
     "uid": "BRZ-009",
-    "model_name": "EMB-110",
+    "model_name": "EMB-135 Legacy",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Angola, Brazil, Greece, Honduras, India",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-010",
-    "model_name": "EMB-110 Bandeirante",
+    "model_name": "EMB-145AEW",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Brazil, Greece, India, Mexico",
     "download_status": "Downloaded",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B",
-    "local_file": "BRZ-010/BRZ-010.glb"
+    "sketchfab_name": "EMB-314 Super Tucano A29B"
   },
   {
     "uid": "BRZ-011",
-    "model_name": "EMB-110B",
+    "model_name": "EMB-190",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Brazil",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-012",
-    "model_name": "EMB-110P1",
+    "model_name": "EMB-201R Ipanema",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Brazil",
     "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B",
-    "local_file": "BRZ-012/BRZ-012.glb"
+    "sketchfab_name": "EMB-314 Super Tucano A29B"
   },
   {
     "uid": "BRZ-013",
-    "model_name": "EMB-111",
+    "model_name": "EMB-202A Ipanema",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Brazil",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-014",
-    "model_name": "EMB-111 Bandeirante",
+    "model_name": "EMB-312 Tucano",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Angola, Argentina, Brazil, Colombia, Egypt, Honduras, Iran, Kenya, Kuwait, Mauritania, Morocco, Paraguay, Peru, Venezuela",
     "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B",
-    "local_file": "BRZ-014/BRZ-014.glb"
+    "sketchfab_name": "EMB-314 Super Tucano A29B"
   },
   {
     "uid": "BRZ-015",
-    "model_name": "EMB-120",
+    "model_name": "EMB-314",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
-    "download_status": "Not Found",
+    "countries": "Angola, Brazil, Burkina Faso, Burundi, Canada, Chile, Colombia, Dominican Republic, Indonesia, Lebanon, Mauritania, Morocco, Nigeria, Philippines, Turkmenistan",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null
   },
   {
     "uid": "BRZ-016",
-    "model_name": "EMB-120 Brasilia",
+    "model_name": "EMB-500",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Brazil, Pakistan, Turkiye",
     "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B",
-    "local_file": "BRZ-016/BRZ-016.glb"
+    "sketchfab_name": "EMB-314 Super Tucano A29B"
   },
   {
     "uid": "BRZ-017",
-    "model_name": "EMB-120RT",
+    "model_name": "EMB-550 Legacy",
     "domain": "AIR",
     "manufacturer": "BRZ",
-    "nations": 1,
+    "countries": "Brazil",
     "download_status": "Downloaded (shared model)",
     "sketchfab_id": "ad14e4e33ac4482998784249bb11d7f8",
-    "sketchfab_name": "EMB-314 Super Tucano A29B",
-    "local_file": "BRZ-017/BRZ-017.glb"
+    "sketchfab_name": "EMB-314 Super Tucano A29B"
+  },
+  {
+    "uid": "CHE-001",
+    "model_name": "PC-12",
+    "domain": "AIR",
+    "manufacturer": "CHE",
+    "countries": "Argentina, Bulgaria, Canada, Finland, Ireland, Italy, South Sudan, Thailand",
+    "download_status": "Downloaded",
+    "sketchfab_id": "d8ab7be8b9794910930e7919d0bf3f5a",
+    "sketchfab_name": "Pilatus PC 12/47"
+  },
+  {
+    "uid": "CHE-002",
+    "model_name": "PC-21",
+    "domain": "AIR",
+    "manufacturer": "CHE",
+    "countries": "Australia, Bangladesh, Finland, Jordan, Qatar, Saudi Arabia, Singapore, Spain, Switzerland, United Arab Emirates",
+    "download_status": "Downloaded",
+    "sketchfab_id": "ed60862e215a498a9a214ca51af1bf32",
+    "sketchfab_name": "Pilatus Pc-21"
+  },
+  {
+    "uid": "CHE-003",
+    "model_name": "PC-6",
+    "domain": "AIR",
+    "manufacturer": "CHE",
+    "countries": "Iran, Peru, Switzerland, Thailand",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHE-004",
+    "model_name": "PC-7",
+    "domain": "AIR",
+    "manufacturer": "CHE",
+    "countries": "Angola, Austria, Belgium, Bolivia, Botswana, Brazil, Brunei, Chad, Chile, India, Iran, Malaysia, Mexico, Myanmar, Netherlands, South Sudan, United Arab Emirates",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHE-005",
+    "model_name": "PC-9",
+    "domain": "AIR",
+    "manufacturer": "CHE",
+    "countries": "Angola, Chad, Myanmar, Oman, Saudi Arabia",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-001",
+    "model_name": "BZK-005",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-002",
+    "model_name": "BZK-006",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-003",
+    "model_name": "BZK-007",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-004",
+    "model_name": "BZK-008",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-005",
+    "model_name": "BZK-009",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-006",
+    "model_name": "CH-148 Cyclone",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "Canada",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-007",
+    "model_name": "CH-2000",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "Iraq, Peru",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-008",
+    "model_name": "CH-3",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "Myanmar, Nigeria, Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-009",
+    "model_name": "CH-4",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "China, DR Congo, Indonesia, Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-010",
+    "model_name": "CH-92A AIR-LAUNCHED MISSILES ASM",
+    "domain": "UAV",
+    "manufacturer": "CHN",
+    "countries": "Serbia",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-011",
+    "model_name": "CJ-10/CJ-10A",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-012",
+    "model_name": "CJ-100",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-013",
+    "model_name": "CJ-20",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-014",
+    "model_name": "CJ-6",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China, Japan, South Korea",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-015",
+    "model_name": "CS/SH-1",
+    "domain": "ART",
+    "manufacturer": "CHN",
+    "countries": "Rwanda",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-016",
+    "model_name": "CZ-10/25E",
+    "domain": "AFV",
+    "manufacturer": "CHN",
+    "countries": "Spain",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-017",
+    "model_name": "DF-11A",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-018",
+    "model_name": "DF-15",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-019",
+    "model_name": "DF-16",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-020",
+    "model_name": "DF-17",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-021",
+    "model_name": "DF-21",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-022",
+    "model_name": "DF-26",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-023",
+    "model_name": "DF-27",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-024",
+    "model_name": "DF-3",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "Saudi Arabia",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-025",
+    "model_name": "DF-31",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-026",
+    "model_name": "DF-41",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Downloaded",
+    "sketchfab_id": "fd705f99e66d4c3993dbbe7045671ac6",
+    "sketchfab_name": "DF-17 Missile"
+  },
+  {
+    "uid": "CHN-027",
+    "model_name": "DF-5",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-028",
+    "model_name": "FM-90",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-029",
+    "model_name": "FN-16",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-030",
+    "model_name": "FN-6",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China, Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-031",
+    "model_name": "H-6",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-032",
+    "model_name": "HJ-10",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-033",
+    "model_name": "HJ-11",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-034",
+    "model_name": "HJ-12",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-035",
+    "model_name": "HJ-73",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-036",
+    "model_name": "HJ-8",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-037",
+    "model_name": "HJ-9",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-038",
+    "model_name": "HQ-11",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-039",
+    "model_name": "HQ-12",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-040",
+    "model_name": "HQ-16A",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-041",
+    "model_name": "HQ-17",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-042",
+    "model_name": "HQ-2",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "Iran, Pakistan",
+    "download_status": "Downloaded",
+    "sketchfab_id": "2e324c9b3fae4da8ba65ada53ddd395c",
+    "sketchfab_name": "HQ-7B FM-90 SPAAML"
+  },
+  {
+    "uid": "CHN-043",
+    "model_name": "HQ-22",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-044",
+    "model_name": "HQ-6A",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-045",
+    "model_name": "HQ-7A",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-046",
+    "model_name": "HQ-9",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China, Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-047",
+    "model_name": "HY-1",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-048",
+    "model_name": "HY-12",
+    "domain": "ART",
+    "manufacturer": "CHN",
+    "countries": "Cyprus, Turkiye",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-049",
+    "model_name": "HY-2",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-050",
+    "model_name": "HY-4",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-051",
+    "model_name": "HY-7",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-052",
+    "model_name": "Houbei",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-053",
+    "model_name": "J-7",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-054",
+    "model_name": "J-8",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-055",
+    "model_name": "JH-7",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-056",
+    "model_name": "JL-10",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-057",
+    "model_name": "JL-2",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-058",
+    "model_name": "JL-3",
+    "domain": "MSL",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-059",
+    "model_name": "JL-8",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-060",
+    "model_name": "JL-9",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-061",
+    "model_name": "JZ-8",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-062",
+    "model_name": "Jiangkai",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-063",
+    "model_name": "Jiangkai II",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-064",
+    "model_name": "Jiangwei II",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-065",
+    "model_name": "KD-88",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-066",
+    "model_name": "KJ-200",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-067",
+    "model_name": "KJ-2000",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-068",
+    "model_name": "KJ-500",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-069",
+    "model_name": "KJ-600",
+    "domain": "AIR",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-070",
+    "model_name": "LY-80",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-071",
+    "model_name": "Luyang II",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-072",
+    "model_name": "Luyang III",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-073",
+    "model_name": "Luzhou",
+    "domain": "NAV",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-074",
+    "model_name": "PGZ-88",
+    "domain": "ADS",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-075",
+    "model_name": "PHZ-85",
+    "domain": "ART",
+    "manufacturer": "CHN",
+    "countries": "Thailand",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-076",
+    "model_name": "PHZ-89",
+    "domain": "ART",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-077",
+    "model_name": "PL-10",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China, Pakistan",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
+  },
+  {
+    "uid": "CHN-078",
+    "model_name": "PL-11",
+    "domain": "ALM",
+    "manufacturer": "CHN",
+    "countries": "China",
+    "download_status": "Pending",
+    "sketchfab_id": null,
+    "sketchfab_name": null
   },
   {
     "uid": "BRZ-018",
@@ -388,58 +1215,6 @@
     "sketchfab_id": null
   },
   {
-    "uid": "CHE-001",
-    "model_name": "PC-12",
-    "domain": "AIR",
-    "manufacturer": "CHE",
-    "nations": 3,
-    "download_status": "Downloaded",
-    "sketchfab_id": "d8ab7be8b9794910930e7919d0bf3f5a",
-    "sketchfab_name": "Pilatus PC 12/47",
-    "local_file": "CHE-001/CHE-001.glb"
-  },
-  {
-    "uid": "CHE-002",
-    "model_name": "PC-21",
-    "domain": "AIR",
-    "manufacturer": "CHE",
-    "nations": 8,
-    "download_status": "Downloaded",
-    "sketchfab_id": "ed60862e215a498a9a214ca51af1bf32",
-    "sketchfab_name": "Pilatus Pc-21",
-    "local_file": "CHE-002/CHE-002.glb"
-  },
-  {
-    "uid": "CHE-003",
-    "model_name": "PC-21 AIR-LAUNCHED MISSILES",
-    "domain": "AIR",
-    "manufacturer": "CHE",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHE-004",
-    "model_name": "PC-21 Asia",
-    "domain": "AIR",
-    "manufacturer": "CHE",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHE-005",
-    "model_name": "PC-6",
-    "domain": "AIR",
-    "manufacturer": "CHE",
-    "nations": 2,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
     "uid": "CHE-006",
     "model_name": "PC-6 Turbo Porter",
     "domain": "AIR",
@@ -548,745 +1323,6 @@
     "download_status": "Not Found",
     "sketchfab_id": null,
     "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-001",
-    "model_name": "BZK-005",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-002",
-    "model_name": "BZK-006",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-003",
-    "model_name": "BZK-007",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-004",
-    "model_name": "BZK-008",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-005",
-    "model_name": "BZK-009",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-006",
-    "model_name": "CH-148 Cyclone",
-    "domain": "NAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-007",
-    "model_name": "CH-2000",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-008",
-    "model_name": "CH-2000 Sama",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-009",
-    "model_name": "CH-3",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 3,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-010",
-    "model_name": "CH-4",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-011",
-    "model_name": "CH-4B",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 2,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-012",
-    "model_name": "CH-4B Paramilitary National Police",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-013",
-    "model_name": "CH-92A AIR-LAUNCHED MISSILES ASM",
-    "domain": "UAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-014",
-    "model_name": "CJ-10/CJ-10A",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-015",
-    "model_name": "CJ-100",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-016",
-    "model_name": "CJ-20",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-017",
-    "model_name": "CJ-6",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 2,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-018",
-    "model_name": "CJ-6/-6A/-6B",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-019",
-    "model_name": "CJ-6A",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-020",
-    "model_name": "CJ-6B",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-021",
-    "model_name": "CS/SH-1",
-    "domain": "ART",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-022",
-    "model_name": "CZ-10/25E",
-    "domain": "AFV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-023",
-    "model_name": "DF-11A",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-024",
-    "model_name": "DF-15",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-025",
-    "model_name": "DF-16",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-026",
-    "model_name": "DF-17",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Downloaded",
-    "sketchfab_id": "fd705f99e66d4c3993dbbe7045671ac6",
-    "sketchfab_name": "DF-17 Missile",
-    "local_file": "CHN-026/CHN-026.glb"
-  },
-  {
-    "uid": "CHN-027",
-    "model_name": "DF-21",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-028",
-    "model_name": "DF-21A",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-029",
-    "model_name": "DF-21A/E",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-030",
-    "model_name": "DF-21C",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-031",
-    "model_name": "DF-21C/D",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-032",
-    "model_name": "DF-21D",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-033",
-    "model_name": "DF-21E",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-034",
-    "model_name": "DF-26",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-035",
-    "model_name": "DF-27",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-036",
-    "model_name": "DF-3",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-037",
-    "model_name": "DF-31",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-038",
-    "model_name": "DF-31A",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-039",
-    "model_name": "DF-31AG",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-040",
-    "model_name": "DF-41",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-041",
-    "model_name": "DF-5",
-    "domain": "MSL",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-042",
-    "model_name": "FM-90",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Downloaded",
-    "sketchfab_id": "2e324c9b3fae4da8ba65ada53ddd395c",
-    "sketchfab_name": "HQ-7B FM-90 SPAAML",
-    "local_file": "CHN-042/CHN-042.glb"
-  },
-  {
-    "uid": "CHN-043",
-    "model_name": "FM-90N",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-044",
-    "model_name": "FN-16",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-045",
-    "model_name": "FN-6",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 2,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-046",
-    "model_name": "H-6",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-047",
-    "model_name": "HJ-10",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null
-  },
-  {
-    "uid": "CHN-048",
-    "model_name": "HJ-11",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-049",
-    "model_name": "HJ-12",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-050",
-    "model_name": "HJ-73",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-051",
-    "model_name": "HJ-8",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-052",
-    "model_name": "HJ-9",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-053",
-    "model_name": "HQ-11",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-054",
-    "model_name": "HQ-11 GUNS",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-055",
-    "model_name": "HQ-12",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-056",
-    "model_name": "HQ-16A",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-057",
-    "model_name": "HQ-16A/B",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-058",
-    "model_name": "HQ-16B",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-059",
-    "model_name": "HQ-17",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-060",
-    "model_name": "HQ-17A",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-061",
-    "model_name": "HQ-2",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 2,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-062",
-    "model_name": "HQ-22",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-063",
-    "model_name": "HQ-6A",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-064",
-    "model_name": "HQ-6D",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-065",
-    "model_name": "HQ-7A",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-066",
-    "model_name": "HQ-7A/B",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-067",
-    "model_name": "HQ-7B",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-068",
-    "model_name": "HQ-9",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-069",
-    "model_name": "HQ-9/P",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-070",
-    "model_name": "HQ-9B",
-    "domain": "ADS",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-071",
-    "model_name": "HY-1",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-072",
-    "model_name": "HY-12 Europe",
-    "domain": "ART",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-073",
-    "model_name": "HY-12 PATROL AND COASTAL",
-    "domain": "ART",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-074",
-    "model_name": "HY-2",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-075",
-    "model_name": "HY-4",
-    "domain": "ALM",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-076",
-    "model_name": "HY-7",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-077",
-    "model_name": "Houbei",
-    "domain": "NAV",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
-  },
-  {
-    "uid": "CHN-078",
-    "model_name": "J-7",
-    "domain": "AIR",
-    "manufacturer": "CHN",
-    "nations": 1,
-    "download_status": "Pending",
-    "sketchfab_id": null
   },
   {
     "uid": "CHN-079",
