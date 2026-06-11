@@ -11,17 +11,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests playwright playwright-stealth
-      - run: playwright install chromium --with-deps
-      - name: Test GrabCAD stealth login
+      - run: pip install requests
+      - name: Test GrabCAD with browser cookies
         env:
-          GRABCAD_EMAIL:   ${{ secrets.GRABCAD_EMAIL }}
-          GRABCAD_PASS:    ${{ secrets.GRABCAD_PASS }}
           GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
           GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
         run: python scripts/grabcad_stealth.py
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: grabcad-screenshots
-          path: /tmp/grabcad_*.png
