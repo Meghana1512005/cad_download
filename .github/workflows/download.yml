@@ -40,26 +40,32 @@ jobs:
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
         run: python scripts/download_glb.py
 
-      - name: Collect GLBs for upload
+      - name: Show downloaded files
+        run: |
+          echo "=== Downloaded files ==="
+          find downloaded_models -type f 2>/dev/null || echo "No files found"
+          echo "========================"
+
+      - name: Collect GLBs into flat folder
         run: |
           mkdir -p release_files
-          find downloaded_models -name "*.glb" -o -name "*.zip" 2>/dev/null | while read f; do
-            cp "$f" release_files/ 2>/dev/null || true
-          done
-          echo "Files ready: $(ls release_files/ | wc -l)"
-          ls release_files/
+          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) -exec cp {} release_files/ \;
+          echo "Files in release_files:"
+          ls -lh release_files/ || echo "(empty)"
 
-      - name: Upload GLBs as release assets
+      - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: models-latest
           name: Downloaded CAD Models
           files: release_files/*
           fail_on_unmatched_files: false
+          make_latest: false
+          overwrite: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit status
+      - name: Commit status update
         run: |
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
