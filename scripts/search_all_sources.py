@@ -192,7 +192,44 @@ def search_nasa(q):
                              "is_free":True,"format":"OBJ/3DS"})
     return results[:5]
 
-SEARCH_FNS = [search_sketchfab, search_grabcad, search_thingiverse,
+
+# ── Source 7: CadNav ──────────────────────────────────────────────────────────
+def search_cadnav(q):
+    import re as _re
+    try:
+        r = requests.get('https://www.cadnav.com/3d-models/',
+            params={'q': q, 'category': '0'},
+            headers={'User-Agent': AGENT, 'Accept': 'text/html'},
+            timeout=15)
+        if r.status_code != 200: return []
+        # Extract model links and names from HTML
+        models = _re.findall(
+            r'href="(https://www\.cadnav\.com/3d-models/model-(\d+)\.html)"[^>]*>\s*<img[^>]*title="([^"]+)"',
+            r.text)
+        if not models:
+            # Alternative pattern
+            models_alt = _re.findall(
+                r'href="(/3d-models/model-(\d+)\.html)"[^>]*title="([^"]+)"',
+                r.text)
+            models = [(f'https://www.cadnav.com{m[0]}', m[1], m[2]) for m in models_alt]
+        results = []
+        seen = set()
+        for url, mid, name in models[:8]:
+            if mid not in seen and name.strip():
+                seen.add(mid)
+                results.append({
+                    'uid': f'cadnav_{mid}',
+                    'name': name.strip(),
+                    'source': 'cadnav.com',
+                    'url': url if url.startswith('http') else f'https://www.cadnav.com{url}',
+                    'is_free': True,
+                    'format': 'OBJ/3DS/FBX/MAX'
+                })
+        return results
+    except Exception as e:
+        return []
+
+SEARCH_FNS = [search_sketchfab, search_grabcad, search_cadnav, search_thingiverse,
               search_printables, search_3dwarehouse, search_nasa]
 
 def best_match(model_name, results):
