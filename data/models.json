@@ -6,7 +6,7 @@
     "manufacturer": "BRZ",
     "nations": 3,
     "countries": "Brazil, Qatar, Saudi Arabia",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -19,7 +19,7 @@
     "manufacturer": "BRZ",
     "nations": 2,
     "countries": "Brazil, Indonesia",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -57,7 +57,7 @@
     "manufacturer": "BRZ",
     "nations": 3,
     "countries": "Brazil, Colombia, Uruguay",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -69,7 +69,7 @@
     "manufacturer": "BRZ",
     "nations": 2,
     "countries": "Brazil, Chile",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -82,7 +82,7 @@
     "manufacturer": "BRZ",
     "nations": 2,
     "countries": "Brazil, Uruguay",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -95,7 +95,7 @@
     "manufacturer": "BRZ",
     "nations": 2,
     "countries": "Brazil, Finland",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -108,7 +108,7 @@
     "manufacturer": "BRZ",
     "nations": 5,
     "countries": "Angola, Brazil, Greece, Honduras, India",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -121,7 +121,7 @@
     "manufacturer": "BRZ",
     "nations": 4,
     "countries": "Brazil, Greece, India, Mexico",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -134,7 +134,7 @@
     "manufacturer": "BRZ",
     "nations": 1,
     "countries": "Brazil",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -147,7 +147,7 @@
     "manufacturer": "BRZ",
     "nations": 1,
     "countries": "Brazil",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -159,7 +159,7 @@
     "manufacturer": "BRZ",
     "nations": 1,
     "countries": "Brazil",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -197,7 +197,7 @@
     "manufacturer": "BRZ",
     "nations": 3,
     "countries": "Brazil, Pakistan, Turkiye",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -209,7 +209,7 @@
     "manufacturer": "BRZ",
     "nations": 1,
     "countries": "Brazil",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -247,7 +247,7 @@
     "manufacturer": "CHE",
     "nations": 4,
     "countries": "Iran, Peru, Switzerland, Thailand",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -259,7 +259,7 @@
     "manufacturer": "CHE",
     "nations": 17,
     "countries": "Angola, Austria, Belgium, Bolivia, Botswana, Brazil, Brunei, Chad, Chile, India, Iran, Malaysia, Mexico, Myanmar, Netherlands, South Sudan, United Arab Emirates",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -271,7 +271,7 @@
     "manufacturer": "CHE",
     "nations": 5,
     "countries": "Angola, Chad, Myanmar, Oman, Saudi Arabia",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -283,7 +283,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -295,7 +295,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -307,7 +307,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -319,7 +319,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -331,7 +331,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -343,7 +343,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Canada",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -355,7 +355,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "Iraq, Peru",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -367,7 +367,7 @@
     "manufacturer": "CHN",
     "nations": 3,
     "countries": "Myanmar, Nigeria, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -379,7 +379,7 @@
     "manufacturer": "CHN",
     "nations": 4,
     "countries": "China, DR Congo, Indonesia, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -391,7 +391,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Serbia",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -403,7 +403,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -415,7 +415,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -427,7 +427,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -439,7 +439,7 @@
     "manufacturer": "CHN",
     "nations": 3,
     "countries": "China, Japan, South Korea",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -451,7 +451,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Rwanda",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -463,7 +463,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Spain",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -476,7 +476,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -489,7 +489,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -501,7 +501,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -526,7 +526,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -538,7 +538,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -550,7 +550,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -563,7 +563,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Saudi Arabia",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -575,7 +575,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -587,7 +587,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -599,7 +599,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -624,7 +624,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -637,7 +637,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "China, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -649,7 +649,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -661,7 +661,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -673,7 +673,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -685,7 +685,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -698,7 +698,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -710,7 +710,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -722,7 +722,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -734,7 +734,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -746,7 +746,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -759,7 +759,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -784,7 +784,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "Iran, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -796,7 +796,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -809,7 +809,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -821,7 +821,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -833,7 +833,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "China, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -845,7 +845,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -857,7 +857,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "Cyprus, Turkiye",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -869,7 +869,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -881,7 +881,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -893,7 +893,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -918,7 +918,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -930,7 +930,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -942,7 +942,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -954,7 +954,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -966,7 +966,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -978,7 +978,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -990,7 +990,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1002,7 +1002,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1014,7 +1014,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1026,7 +1026,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1038,7 +1038,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1050,7 +1050,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1062,7 +1062,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1074,7 +1074,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1099,7 +1099,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1111,7 +1111,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1123,7 +1123,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1135,7 +1135,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1147,7 +1147,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1159,7 +1159,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1171,7 +1171,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1183,7 +1183,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Thailand",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1195,7 +1195,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null
@@ -1207,7 +1207,7 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "China, Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
@@ -1220,7 +1220,7 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
