@@ -77,16 +77,5 @@ def download_model(s, slug, save_path):
 if __name__ == "__main__":
     if not GC_SESSION:
         print("ERROR: GRABCAD_SESSION secret not set"); exit(1)
-
-    print(f"Session cookie: {GC_SESSION[:20]}...")
     s = build_session()
-
-    print("\n=== Verifying session ===")
-    ok = verify_session(s)
-
-    print("\n=== Testing search ===")
-    for query in ["F-16 fighter jet", "T-72 tank", "AH-64 Apache helicopter", "Leopard 2 tank"]:
-        results = search_grabcad(s, query, per_page=3)
-        print(f"  '{query}': {len(results)} results")
-        for r in results[:2]:
-            print(f"    [{r['slug']}] {r['name']}")
+    debug_search_fields(s, "F-16 fighter")
