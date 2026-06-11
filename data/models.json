@@ -9,7 +9,8 @@
     "download_status": "Pending",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "_batch": "batch1"
   },
   {
     "uid": "BRZ-002",
