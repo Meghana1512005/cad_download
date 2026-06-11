@@ -1,4 +1,4 @@
-name: 1 - Search Sketchfab for Models
+name: 1 - Search All CAD Sources
 
 on:
   push:
@@ -36,12 +36,12 @@ jobs:
 
       - run: pip install requests
 
-      - name: Search Sketchfab
+      - name: Search all CAD sources
         env:
           SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
-        run: python scripts/search_sketchfab.py
+        run: python scripts/search_all_sources.py
 
       - name: Commit results
         run: |
