@@ -7,7 +7,8 @@
     "countries": "Brazil, Qatar, Saudi Arabia",
     "download_status": "Not Found \u2014 Paid Only",
     "sketchfab_id": null,
-    "sketchfab_name": null
+    "sketchfab_name": null,
+    "_trigger": "batch1_search"
   },
   {
     "uid": "BRZ-002",
