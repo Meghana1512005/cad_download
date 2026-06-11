@@ -53,4 +53,4 @@ jobs:
           git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
           git diff --staged --quiet || git commit -m "Search batch ${{ github.event.inputs.batch_start || '0' }}: update model status"
-          git push
+          git pull --rebase origin main && git push || (git pull --rebase origin main && git push)
