@@ -10,6 +10,21 @@ Multi-source CAD search:
 import json, os, time, re, requests
 from urllib.parse import quote
 
+# ── GrabCAD client ───────────────────────────────────────────────────────────
+try:
+    from grabcad_client import GrabCADClient
+    _gc_user = os.environ.get("GRABCAD_USER", "meghana.reddy-12")
+    _gc_pass = os.environ.get("GRABCAD_PASS", "")
+    gc = GrabCADClient(_gc_user, _gc_pass) if _gc_pass else None
+    if gc and gc.logged_in:
+        print("✓ GrabCAD: logged in")
+    else:
+        gc = None
+        print("✗ GrabCAD: not available")
+except Exception as e:
+    gc = None
+    print(f"✗ GrabCAD import error: {e}")
+
 SF_TOKEN  = os.environ.get("SKETCHFAB_TOKEN", "7ca059dbec904c6da9985c82faa2ca44")
 TV_TOKEN  = os.environ.get("THINGIVERSE_TOKEN", "")
 SF_HDR    = {"Authorization": f"Token {SF_TOKEN}"}
@@ -148,7 +163,7 @@ def search_nasa(q):
                              "is_free": True, "format": "OBJ/3DS"})
     return results[:5]
 
-SEARCH_FNS = [search_sketchfab, search_thingiverse, search_printables,
+SEARCH_FNS = [search_sketchfab, search_grabcad, search_thingiverse, search_printables,
               search_3dwarehouse, search_nasa]
 
 def best_match(model_name, results):
@@ -156,6 +171,16 @@ def best_match(model_name, results):
         if r.get("is_free") and is_good(model_name, r["name"]):
             return r
     return None
+
+# ── Source 6: GrabCAD ────────────────────────────────────────────────────────
+def search_grabcad(q):
+    if not gc: return []
+    try:
+        results = gc.search(q, per_page=8)
+        return [{"uid": r["slug"], "name": r["name"], "source": "grabcad.com",
+                 "url": r["url"], "is_free": True, "format": "STEP/IGES/OBJ"}
+                for r in results]
+    except: return []
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 with open(DATA) as f:
