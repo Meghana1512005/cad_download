@@ -34,6 +34,10 @@ downloaded = 0
 def download_from_sketchfab(uid, model_uid):
     """Download GLB from Sketchfab API."""
     r = requests.get(f"{SF_BASE}/models/{uid}/download", headers=SF_HDR, timeout=15)
+    if r.status_code == 429:
+        print(f"    ⚠ Rate limited, waiting 30s...")
+        import time as t2; t2.sleep(30)
+        r = requests.get(f"{SF_BASE}/models/{sf_id}/download", headers=SF_HDR, timeout=15)
     if r.status_code != 200:
         return None, f"SF HTTP {r.status_code}"
     data = r.json()
@@ -122,7 +126,7 @@ for m in batch:
         m["download_status"] = f"Download Failed ({status})"
         seen[sf_id] = None
 
-    time.sleep(0.5)
+    time.sleep(2)
 
 with open(DATA, "w") as f:
     json.dump(models, f, indent=2)
