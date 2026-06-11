@@ -38,7 +38,10 @@ jobs:
 
       - name: Search all CAD sources
         env:
-          SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
+          SKETCHFAB_TOKEN:   ${{ secrets.SKETCHFAB_TOKEN }}
+          GRABCAD_USER:      ${{ secrets.GRABCAD_USER }}
+          GRABCAD_PASS:      ${{ secrets.GRABCAD_PASS }}
+          THINGIVERSE_TOKEN: ${{ secrets.THINGIVERSE_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
         run: python scripts/search_all_sources.py
