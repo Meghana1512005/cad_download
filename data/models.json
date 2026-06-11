@@ -225,11 +225,13 @@
     "manufacturer": "CHE",
     "nations": 8,
     "countries": "Argentina, Bulgaria, Canada, Finland, Ireland, Italy, South Sudan, Thailand",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "d8ab7be8b979491",
+    "sketchfab_name": "Pilatus PC 12/47",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/d8ab7be8b979491",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHE-002",
@@ -238,11 +240,13 @@
     "manufacturer": "CHE",
     "nations": 10,
     "countries": "Australia, Bangladesh, Finland, Jordan, Qatar, Saudi Arabia, Singapore, Spain, Switzerland, United Arab Emirates",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "ed60862e215a498",
+    "sketchfab_name": "Pilatus Pc-21",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/ed60862e215a498",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHE-003",
@@ -522,11 +526,13 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "fd705f99e66d4c3",
+    "sketchfab_name": "DF-17 Missile",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/fd705f99e66d4c3",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHN-021",
@@ -620,11 +626,13 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Pakistan",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "2e324c9b3fae4da",
+    "sketchfab_name": "HQ-7B FM-90 SPAAML",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/2e324c9b3fae4da",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHN-029",
@@ -782,11 +790,13 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "50e0f40db034441",
+    "sketchfab_name": "Chinese HQ-17",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/50e0f40db034441",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHN-042",
@@ -1097,11 +1107,13 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
-    "sketchfab_id": null,
-    "sketchfab_name": null,
+    "download_status": "Found",
+    "sketchfab_id": "b0eb176b53554f1",
+    "sketchfab_name": "KJ-2000 AWACS",
     "local_file": null,
-    "source_site": "sketchfab.com"
+    "source_site": "sketchfab.com",
+    "source_url": "https://sketchfab.com/3d-models/b0eb176b53554f1",
+    "file_format": "GLB/GLTF"
   },
   {
     "uid": "CHN-068",
