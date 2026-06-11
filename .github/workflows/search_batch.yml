@@ -1,4 +1,4 @@
-name: 3 - Search Batch (100 models)
+name: 3 - Search Batch (configurable)
 
 on:
   workflow_dispatch:
@@ -6,11 +6,11 @@ on:
       batch_start:
         description: 'Start index (0-based)'
         required: false
-        default: '100'
+        default: '1900'
       batch_size:
         description: 'Models per run'
         required: false
-        default: '900'
+        default: '1000'
 
 permissions:
   contents: write
@@ -31,14 +31,14 @@ jobs:
 
       - run: pip install requests
 
-      - name: Search all 900 models
+      - name: Search models
         env:
           SKETCHFAB_TOKEN:   ${{ secrets.SKETCHFAB_TOKEN }}
           GRABCAD_SESSION:   ${{ secrets.GRABCAD_SESSION }}
           GRABCAD_XSRF:      ${{ secrets.GRABCAD_XSRF }}
           THINGIVERSE_TOKEN: ${{ secrets.THINGIVERSE_TOKEN }}
-          BATCH_START: ${{ github.event.inputs.batch_start || '100' }}
-          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '900' }}
+          BATCH_START: ${{ github.event.inputs.batch_start || '1900' }}
+          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '1000' }}
         run: python scripts/search_all_sources.py
 
       - name: Commit results
@@ -47,5 +47,5 @@ jobs:
           git config user.email "bot@cad-downloader"
           git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
-          git diff --staged --quiet || git commit -m "Search 900 models (batch ${{ github.event.inputs.batch_start || '100' }}): update status"
+          git diff --staged --quiet || git commit -m "Search batch ${{ github.event.inputs.batch_start || '1900' }}: update status"
           git pull --rebase origin main && git push || (git pull --rebase origin main && git push)
