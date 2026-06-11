@@ -13,7 +13,7 @@ on:
       batch_size:
         description: 'Models per run'
         required: false
-        default: '20'
+        default: '150'
 
 permissions:
   contents: write
@@ -21,6 +21,7 @@ permissions:
 jobs:
   download:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,21 +38,20 @@ jobs:
         env:
           SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
-          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
+          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '150' }}
         run: python scripts/download_glb.py
 
       - name: Show downloaded files
         run: |
-          echo "=== Downloaded files ==="
-          find downloaded_models -type f 2>/dev/null || echo "No files found"
-          echo "========================"
+          echo "Downloaded files:"
+          find downloaded_models -type f -name "*.glb" -o -name "*.zip" 2>/dev/null | head -20 || echo "None"
 
       - name: Collect GLBs into flat folder
         run: |
           mkdir -p release_files
-          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) -exec cp {} release_files/ \;
-          echo "Files in release_files:"
-          ls -lh release_files/ || echo "(empty)"
+          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) -exec cp {} release_files/ \; 2>/dev/null || true
+          echo "Files collected: $(ls release_files/ 2>/dev/null | wc -l)"
+          ls release_files/ 2>/dev/null | head -30
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
@@ -65,7 +65,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit status update
+      - name: Commit status
         run: |
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
