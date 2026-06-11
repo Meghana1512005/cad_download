@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       batch_start:
-        description: 'Queue start index'
+        description: 'Queue start index (0 = first pending)'
         required: false
         default: '0'
       batch_size:
-        description: 'Models per run'
+        description: 'Models per run (keep ≤ 20)'
         required: false
         default: '20'
 
@@ -37,16 +37,15 @@ jobs:
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
         run: python scripts/download_glb.py
 
-      - name: Collect GLBs for upload
+      - name: Collect GLBs
         run: |
           mkdir -p release_files
           find downloaded_models -name "*.glb" -o -name "*.zip" | while read f; do
             cp "$f" release_files/
           done
-          echo "Files to release:"
-          ls release_files/
+          ls release_files/ | head -30
 
-      - name: Upload GLBs as release assets
+      - name: Upload to release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: models-latest
