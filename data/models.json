@@ -10,7 +10,8 @@
     "sketchfab_id": null,
     "sketchfab_name": null,
     "local_file": null,
-    "_batch": "batch1"
+    "_batch": "batch1",
+    "_trigger": "retry_download"
   },
   {
     "uid": "BRZ-002",
