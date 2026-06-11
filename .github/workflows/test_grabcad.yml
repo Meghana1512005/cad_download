@@ -11,34 +11,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests playwright
+      - run: pip install requests playwright playwright-stealth
       - run: playwright install chromium --with-deps
-      - name: Test GrabCAD Playwright login
+      - name: Test GrabCAD stealth login
         env:
-          GRABCAD_EMAIL: ${{ secrets.GRABCAD_EMAIL }}
-          GRABCAD_PASS:  ${{ secrets.GRABCAD_PASS }}
-        run: python scripts/grabcad_playwright.py
----
-name: Debug GrabCAD Login Page
-
-on:
-  workflow_dispatch:
-
-jobs:
-  debug:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
-      - run: pip install playwright
-      - run: playwright install chromium --with-deps
-      - name: Debug login page
-        env:
-          GRABCAD_EMAIL: ${{ secrets.GRABCAD_EMAIL }}
-          GRABCAD_PASS:  ${{ secrets.GRABCAD_PASS }}
-        run: python scripts/grabcad_debug.py
+          GRABCAD_EMAIL:   ${{ secrets.GRABCAD_EMAIL }}
+          GRABCAD_PASS:    ${{ secrets.GRABCAD_PASS }}
+          GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
+          GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
+        run: python scripts/grabcad_stealth.py
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: grabcad-screenshot
-          path: /tmp/grabcad_login.png
+          name: grabcad-screenshots
+          path: /tmp/grabcad_*.png
