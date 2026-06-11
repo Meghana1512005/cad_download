@@ -1,14 +1,17 @@
 name: 2 - Download GLB Models
 
 on:
+  push:
+    paths:
+      - 'data/models.json'
   workflow_dispatch:
     inputs:
       batch_start:
-        description: 'Queue start index (0 = first pending)'
+        description: 'Queue start index'
         required: false
         default: '0'
       batch_size:
-        description: 'Models per run (keep ≤ 20)'
+        description: 'Models per run'
         required: false
         default: '20'
 
@@ -37,15 +40,16 @@ jobs:
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '20' }}
         run: python scripts/download_glb.py
 
-      - name: Collect GLBs
+      - name: Collect GLBs for upload
         run: |
           mkdir -p release_files
-          find downloaded_models -name "*.glb" -o -name "*.zip" | while read f; do
-            cp "$f" release_files/
+          find downloaded_models -name "*.glb" -o -name "*.zip" 2>/dev/null | while read f; do
+            cp "$f" release_files/ 2>/dev/null || true
           done
-          ls release_files/ | head -30
+          echo "Files ready: $(ls release_files/ | wc -l)"
+          ls release_files/
 
-      - name: Upload to release
+      - name: Upload GLBs as release assets
         uses: softprops/action-gh-release@v2
         with:
           tag_name: models-latest
@@ -61,5 +65,5 @@ jobs:
           git config user.email "bot@cad-downloader"
           git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
-          git diff --staged --quiet || git commit -m "Download batch ${{ github.event.inputs.batch_start || '0' }}: update status"
+          git diff --staged --quiet || git commit -m "Download batch: update status"
           git push
