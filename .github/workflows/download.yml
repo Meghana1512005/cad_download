@@ -35,8 +35,7 @@ jobs:
       - run: pip install requests
 
       - name: Debug queue
-        run: |
-          python3 scripts/debug_queue.py
+        run: python3 scripts/debug_queue.py
 
       - name: Download GLB files
         env:
@@ -45,13 +44,13 @@ jobs:
           BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
         run: python scripts/download_glb.py
 
+      - name: Show debug log
+        run: cat data/download_debug.txt || echo "No debug log found"
+
       - name: Debug after download
         run: |
-          echo "=== Downloaded files ==="
+          echo "Downloaded files count:"
           find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | wc -l
-          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | head -10
-          echo "=== models.json status after ==="
-          python3 scripts/debug_queue.py
 
       - name: Collect GLBs into flat folder
         run: |
@@ -76,6 +75,6 @@ jobs:
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
           git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
-          git add data/models.json
-          git diff --staged --quiet && echo "No changes to commit" || git commit -m "Download batch: update status"
+          git add data/models.json data/download_debug.txt
+          git diff --staged --quiet && echo "NO CHANGES DETECTED" || git commit -m "Download batch: update status"
           git pull --rebase origin main && git push || (git pull --rebase origin main && git push)

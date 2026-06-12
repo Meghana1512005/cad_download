@@ -128,3 +128,11 @@ for m in batch:
 with open(DATA, "w") as f:
     json.dump(models, f, indent=2)
 print(f"\nDone — {downloaded}/{len(batch)} downloaded.")
+
+# Write debug log regardless of outcome
+with open(os.path.join(os.path.dirname(__file__), "..", "data", "download_debug.txt"), "w") as dbg:
+    dbg.write("queue=" + str(len(queue)) + " batch=" + str(len(batch)) + " downloaded=" + str(downloaded) + "\n")
+    from collections import Counter
+    s = Counter(m.get("download_status") for m in models)
+    for k,v in s.items():
+        dbg.write("  " + str(v) + " " + str(k) + "\n")
