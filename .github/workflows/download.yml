@@ -13,7 +13,7 @@ on:
       batch_size:
         description: 'Models per run'
         required: false
-        default: '150'
+        default: '100'
 
 permissions:
   contents: write
@@ -34,24 +34,48 @@ jobs:
 
       - run: pip install requests
 
+      - name: Debug queue
+        run: |
+          python3 -c "
+import json
+with open('data/models.json') as f:
+    models = json.load(f)
+from collections import Counter
+s = Counter(m.get('download_status') for m in models)
+print('Status summary:')
+for k,v in sorted(s.items(), key=lambda x:-x[1]): print(f'  {v}  {k}')
+found = [m for m in models if m.get('download_status','') in ('Found','Found on Sketchfab')]
+print(f'Queue (Found): {len(found)}')
+if found: print(f'First: {found[0][\"uid\"]} | {found[0].get(\"sketchfab_id\")}')
+"
+
       - name: Download GLB files
         env:
           SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
           BATCH_START: ${{ github.event.inputs.batch_start || '0' }}
-          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '150' }}
+          BATCH_SIZE:  ${{ github.event.inputs.batch_size  || '100' }}
         run: python scripts/download_glb.py
 
-      - name: Show downloaded files
+      - name: Debug after download
         run: |
           echo "Downloaded files:"
-          find downloaded_models -type f -name "*.glb" -o -name "*.zip" 2>/dev/null | head -20 || echo "None"
+          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | wc -l
+          find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | head -10
+          echo "models.json diff:"
+          python3 -c "
+import json
+with open('data/models.json') as f:
+    models = json.load(f)
+from collections import Counter
+s = Counter(m.get('download_status') for m in models)
+for k,v in sorted(s.items(), key=lambda x:-x[1]): print(f'  {v}  {k}')
+"
 
       - name: Collect GLBs into flat folder
         run: |
           mkdir -p release_files
           find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) -exec cp {} release_files/ \; 2>/dev/null || true
-          echo "Files collected: $(ls release_files/ 2>/dev/null | wc -l)"
-          ls release_files/ 2>/dev/null | head -30
+          echo "Files to release: $(ls release_files/ 2>/dev/null | wc -l)"
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
@@ -71,5 +95,5 @@ jobs:
           git config user.email "bot@cad-downloader"
           git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           git add data/models.json
-          git diff --staged --quiet || git commit -m "Download batch: update status"
+          git diff --staged --quiet && echo "No changes to commit" || git commit -m "Download batch: update status"
           git pull --rebase origin main && git push || (git pull --rebase origin main && git push)
