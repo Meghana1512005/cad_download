@@ -6,11 +6,11 @@ on:
       batch_start:
         description: 'Start index (0-based)'
         required: false
-        default: '1900'
+        default: '3000'
       batch_size:
         description: 'Models per run'
         required: false
-        default: '1100'
+        default: '909'
 
 permissions:
   contents: write
