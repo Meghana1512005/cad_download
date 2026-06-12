@@ -36,18 +36,7 @@ jobs:
 
       - name: Debug queue
         run: |
-          python3 -c "
-import json
-with open('data/models.json') as f:
-    models = json.load(f)
-from collections import Counter
-s = Counter(m.get('download_status') for m in models)
-print('Status summary:')
-for k,v in sorted(s.items(), key=lambda x:-x[1]): print(f'  {v}  {k}')
-found = [m for m in models if m.get('download_status','') in ('Found','Found on Sketchfab')]
-print(f'Queue (Found): {len(found)}')
-if found: print(f'First: {found[0][\"uid\"]} | {found[0].get(\"sketchfab_id\")}')
-"
+          python3 scripts/debug_queue.py
 
       - name: Download GLB files
         env:
@@ -58,18 +47,11 @@ if found: print(f'First: {found[0][\"uid\"]} | {found[0].get(\"sketchfab_id\")}'
 
       - name: Debug after download
         run: |
-          echo "Downloaded files:"
+          echo "=== Downloaded files ==="
           find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | wc -l
           find downloaded_models -type f \( -name "*.glb" -o -name "*.zip" \) 2>/dev/null | head -10
-          echo "models.json diff:"
-          python3 -c "
-import json
-with open('data/models.json') as f:
-    models = json.load(f)
-from collections import Counter
-s = Counter(m.get('download_status') for m in models)
-for k,v in sorted(s.items(), key=lambda x:-x[1]): print(f'  {v}  {k}')
-"
+          echo "=== models.json status after ==="
+          python3 scripts/debug_queue.py
 
       - name: Collect GLBs into flat folder
         run: |
