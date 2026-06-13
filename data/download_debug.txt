@@ -1,0 +1,4 @@
+queue=66 batch=66 downloaded=66
+  3297 Not Found
+  575 Downloaded
+  37 Downloaded (shared)
