@@ -14040,7 +14040,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/774e5a021ef548ac923d0512e0deb818",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-552",
@@ -14127,7 +14128,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/a6627f1cb1844a4382cc70c7f1dd3e17",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-559",
@@ -14217,7 +14219,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/9de894e9f43442d9ad7dcb4bd55ca407",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-566",
@@ -14862,7 +14865,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/2c011ad071c34d17a899f14c8720e947",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-616",
@@ -14889,7 +14893,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f4715b3d64fe4c1dbbedb0944b1a45a3",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-618",
@@ -15780,7 +15785,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/7675e52155a544aebb3509f3862a7ce5",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-685",
@@ -15891,7 +15897,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/9847994786194e8f988be6b2ac5f162a",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-694",
@@ -15930,7 +15937,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f43db8a8245c4aee87a50dc793af8fb7",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-697",
@@ -16359,7 +16367,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e670b72d9b194e7dac013f621c2cc47d",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-731",
@@ -18255,7 +18264,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/7db6bd58bb8f405abeb5ed02bcabc960",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-875",
@@ -18396,7 +18406,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/1f2c437dc8fd4329aac81ae762fdb7e6",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-886",
@@ -18489,7 +18500,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/cddef5cc80bc4aab8be65b38c29987fa",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-893",
@@ -18504,7 +18516,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/cb035c08e59f48459c56156327b56dc5",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-894",
@@ -18519,7 +18532,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e6b7292bcd974a2d929f2d06465e6cdb",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-895",
@@ -18534,7 +18548,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e6b7292bcd974a2d929f2d06465e6cdb",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-896",
@@ -19695,7 +19710,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/26f4e5fde15747db9f88d2d60b86f9cf",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-986",
@@ -19710,7 +19726,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/26f4e5fde15747db9f88d2d60b86f9cf",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-987",
@@ -19725,7 +19742,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/26f4e5fde15747db9f88d2d60b86f9cf",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-988",
@@ -19818,7 +19836,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/65eb4cbf1ce141f7b0a90e868b526e95",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-995",
@@ -24006,7 +24025,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/8e0f0b07c85b471db565774652766048",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1341",
@@ -24033,7 +24053,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/6a907874e2df46c9ba97246756abf40d",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1343",
@@ -24309,7 +24330,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/86f1e11310e546db9bf323fa1a62f069",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1365",
@@ -24339,7 +24361,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/86f1e11310e546db9bf323fa1a62f069",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1367",
@@ -24354,7 +24377,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/32ade9488bd745dcbd9ea7dd43ebeb0d",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1368",
@@ -24369,7 +24393,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f0a50441fd894a64a4a415f8820314b7",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1369",
@@ -24420,7 +24445,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/a0776b091c15412a8ff561e50a19c52b",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1373",
@@ -24435,7 +24461,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/6fc72df60975449faa81105907410bb6",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1374",
@@ -24474,7 +24501,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/d2b004b045c24c5abcc573c782ece9b8",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1377",
@@ -24564,7 +24592,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/5c1357f33a274b6fad062bed5356af1a",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1384",
@@ -24675,7 +24704,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/b79d6c2a49b040ffb09f0d3c27ce9d30",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1393",
@@ -24714,7 +24744,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/37fcec193b314fd986cf26528c2d3cc0",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1396",
@@ -24729,7 +24760,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/a0ee4dd413e44d61b0ebf19382fa4965",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1397",
@@ -24780,7 +24812,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/c58810c842cf4075a3b7086319c3e9b5",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1401",
@@ -24795,7 +24828,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/0320d282bc0f4d3e9b98d4a7867c253f",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1402",
@@ -24870,7 +24904,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/4a5e736ea7b6486299afc175663a05ba",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1408",
@@ -24912,7 +24947,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/95eae9bdbd1147a1b7ceae594e4ea6fd",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1411",
@@ -24951,7 +24987,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/79a09d9082084893942c993a4e31fe24",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1414",
@@ -24966,7 +25003,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/c0447f3531534fd68d95a3796698ddb3",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1415",
@@ -24993,7 +25031,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/92064afe8a8e4ab893e20f6f9fdf230c",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1417",
@@ -25008,7 +25047,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/18456a0029a844a2a6c762daa38948da",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1418",
@@ -25047,7 +25087,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/0fc130c2eb1e4ef99efeb2100ad67c9a",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1421",
@@ -25134,7 +25175,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f9029795e53c4f86b0547b16384de0fb",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1428",
@@ -25197,7 +25239,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/d5d86e1c6ed44df09e0dd42827f64f7b",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1433",
@@ -25212,7 +25255,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e66c540f891b426689dbd45fabb1f0a1",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1434",
@@ -25488,7 +25532,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/c9511b4305c24c779d059f1cc212f05c",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1454",
@@ -26061,7 +26106,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/1cc3992c28c84f459554dfdef8444026",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1498",
@@ -26091,7 +26137,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/945ebecf45cf4ee0ba9215e81dea679b",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1500",
@@ -26118,7 +26165,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e19531e930a04a15bfcc3b3176e962fe",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1502",
@@ -26145,7 +26193,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/0dee92da15c5475fa67ec08636ccd9f2",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1504",
@@ -26259,7 +26308,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/2a6afea47e0f4afd91ad02a3e57f24c7",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1513",
@@ -26322,7 +26372,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f6dc77012f67432b9c8cddc051c96a16",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1518",
@@ -26460,7 +26511,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e25c99410f9149b9ab9b5d3dfe2cc811",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1529",
@@ -26651,7 +26703,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/3a0c8ec843d74a8a817a8948b36f30b4",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1543",
@@ -27345,7 +27398,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/26eaeb6a7dbf498db16e02b1c232de33",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1595",
@@ -27960,7 +28014,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/85f15704c44841cbb0029b125c5905a4",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1644",
@@ -27987,7 +28042,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/f05522d353484b65a00b9a0f85e26aa7",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1646",
@@ -28066,7 +28122,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/9b475ec2587f44a9951a57a647dff207",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1652",
@@ -28229,7 +28286,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/9ce4a9272fca448eb8dc6c59a8b5a091",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1665",
@@ -28432,7 +28490,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/0aac0c131b064b05ae9b2dea74671779",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1681",
@@ -28471,7 +28530,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/a1ab7fb2cf6c4ae7b570e5e0a41c6ab8",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1684",
@@ -28486,7 +28546,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/e9c8b1cef28b498fba9282f91fb519ba",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1685",
@@ -28517,7 +28578,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/5f123d6ae97847208a20446d6112deb8",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1687",
@@ -28584,7 +28646,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/3a5306f3961146729d054ee42bc063e5",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1692",
@@ -28599,7 +28662,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/497e68d072d2467493a62633d077a003",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1693",
@@ -29242,7 +29306,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/65cd2eee84544eea856c0215dd67bc3d",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1741",
@@ -29725,7 +29790,8 @@
     "local_file": null,
     "source_site": "sketchfab.com",
     "source_url": "https://sketchfab.com/3d-models/96320b01256b493e8dfde67910aa511c",
-    "file_format": "GLB/GLTF"
+    "file_format": "GLB/GLTF",
+    "retry": 3
   },
   {
     "uid": "UNK-1776",
