@@ -40,7 +40,6 @@ jobs:
         env:
           GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
           GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
-          GRABCAD_USER:    ${{ secrets.GRABCAD_USER }}
         run: python scripts/debug_cadnav_grabcad.py
 
       - name: Search GrabCAD + CadNav

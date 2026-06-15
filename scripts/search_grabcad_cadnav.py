@@ -9,8 +9,7 @@ from grabcad_client import GrabCADClient
 DATA         = os.path.join(os.path.dirname(__file__), "..", "data", "models.json")
 BATCH_START  = int(os.environ.get("BATCH_START", 0))
 BATCH_SIZE   = int(os.environ.get("BATCH_SIZE", 500))
-GRABCAD_USER = os.environ.get("GRABCAD_USER", "")
-GRABCAD_PASS = os.environ.get("GRABCAD_PASS", "")
+
 AGENT        = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120"
 
 JUNK = re.compile(
@@ -114,18 +113,14 @@ def cadnav_match(model_name):
         return best, best_score
     return None, 0
 
-# ── GrabCAD: login ────────────────────────────────────────────────────────────
-gc = None
-if GRABCAD_USER and GRABCAD_PASS:
-    print(f"Logging into GrabCAD ({GRABCAD_USER[:6]}***)...")
-    gc = GrabCADClient(GRABCAD_USER, GRABCAD_PASS)
-    if not gc.logged_in:
-        print("GrabCAD login failed — skipping GrabCAD search")
-        gc = None
-    else:
-        print("GrabCAD ready\n")
+# ── GrabCAD: cookie-based session ────────────────────────────────────────────
+print("Initialising GrabCAD (cookie session)...")
+gc_client = GrabCADClient()
+gc = gc_client if gc_client.logged_in else None
+if gc:
+    print("GrabCAD ready\n")
 else:
-    print("GRABCAD_USER/PASS not set — skipping GrabCAD\n")
+    print("GrabCAD session invalid — skipping GrabCAD search\n")
 
 DOMAIN_HINTS = {
     'AIR': 'aircraft jet fighter', 'HEL': 'helicopter',
