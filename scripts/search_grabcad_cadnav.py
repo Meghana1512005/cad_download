@@ -86,7 +86,7 @@ for cat_name, cat_url in CADNAV_CATS:
             for mid, mname in entries:
                 if mid not in seen_page and mname:
                     seen_page.add(mid)
-                    cadnav_index.append((mid, mname))
+                    cadnav_index.append((mid, mname, cat_name))
 
             print(f"  {cat_name} page {page}: {len(seen_page)} models")
             time.sleep(0.4)
@@ -97,13 +97,13 @@ for cat_name, cat_url in CADNAV_CATS:
 
 # Global deduplicate
 seen_ids = set()
-cadnav_index = [(mid, mn) for mid, mn in cadnav_index
+cadnav_index = [(mid, mn, cat) for mid, mn, cat in cadnav_index
                 if mid not in seen_ids and not seen_ids.add(mid)]
 print(f"CadNav index: {len(cadnav_index)} unique models\n")
 
 def cadnav_match(model_name):
     best_score, best = 0, None
-    for mid, cname in cadnav_index:
+    for mid, cname, cat in cadnav_index:
         if JUNK.search(cname):
             continue
         s = word_score(model_name, cname)
@@ -174,6 +174,7 @@ for i, m in enumerate(batch):
         m["source_url"]      = f"https://www.cadnav.com/3d-models/model-{mid}.html"
         m["cadnav_id"]       = mid
         m["cadnav_name"]     = cname
+        m["cadnav_cid"]      = CADNAV_CAT_CID.get(cn_cat, 3)
         found_cadnav += 1
         print(f"  [CadNav]  {uid}: {name!r} -> {cname!r} ({cn_score:.2f})")
         continue

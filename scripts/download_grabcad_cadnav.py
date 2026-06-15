@@ -175,7 +175,31 @@ cn.headers.update({
     "Accept-Language": "en-US,en;q=0.5",
 })
 
-def download_from_cadnav(cadnav_id, uid):
+CADNAV_CIDS = [3, 1, 2, 4, 5, 6]  # try weapons first, then aircraft, vehicle, watercraft
+
+def cadnav_get_uhash(cadnav_id, model_page, cid_order=None):
+    """Try cid=3,1,2,4,5,6 until step1 returns a valid uhash. Returns (uhash, cid) or (None, None)."""
+    for cid in (cid_order or CADNAV_CIDS):
+        url = f"https://www.cadnav.com/plus/download.php?open=0&aid={cadnav_id}&cid={cid}"
+        cn.headers["Referer"] = model_page
+        try:
+            r = cn.get(url, timeout=20, allow_redirects=True)
+            if r.status_code != 200:
+                continue
+            match = re.search(
+                r'href="[^"]*download\.php\?open=2&(?:amp;)?id=\d+&(?:amp;)?uhash=([a-f0-9A-F0-9]+)"',
+                r.text)
+            if not match:
+                match = re.search(r'uhash=([a-f0-9A-F0-9]{8,})', r.text)
+            if match:
+                print(f"    CadNav uhash found with cid={cid}")
+                return match.group(1), cid
+            time.sleep(0.5)
+        except Exception as e:
+            print(f"    CadNav step1 cid={cid} error: {e}")
+    return None, None
+
+def download_from_cadnav(cadnav_id, uid, stored_cid=None):
     model_dir = os.path.join(OUT_DIR, uid)
     os.makedirs(model_dir, exist_ok=True)
 
@@ -187,33 +211,19 @@ def download_from_cadnav(cadnav_id, uid):
     except Exception as e:
         print(f"    CadNav model page pre-visit failed: {e} — continuing anyway")
 
-    # Step 1: get intermediate page with uhash
-    step1_url = f"https://www.cadnav.com/plus/download.php?open=0&aid={cadnav_id}&cid=3"
-    cn.headers["Referer"] = model_page
-    try:
-        r1 = cn.get(step1_url, timeout=20, allow_redirects=True)
-        if r1.status_code != 200:
-            return None, f"CadNav step1 HTTP {r1.status_code} (url={r1.url})"
-
-        # Primary: match the full href
-        uhash_match = re.search(
-            r'href="[^"]*download\.php\?open=2&(?:amp;)?id=\d+&(?:amp;)?uhash=([a-f0-9A-F0-9]+)"',
-            r1.text)
-        # Fallback: any uhash= in the page
-        if not uhash_match:
-            uhash_match = re.search(r'uhash=([a-f0-9A-F0-9]{8,})', r1.text)
-
-        if not uhash_match:
-            # Log first 500 chars of body to help diagnose
-            snippet = r1.text[:500].replace('\n', ' ')
-            return None, f"CadNav: uhash not found. Page starts: {snippet}"
-        uhash = uhash_match.group(1)
-    except Exception as e:
-        return None, f"CadNav step1 error: {e}"
+    # Step 1: try multiple cids to find uhash
+    # Reorder cids: try stored_cid first if available
+    cid_order = CADNAV_CIDS[:]
+    if stored_cid and stored_cid in cid_order:
+        cid_order.remove(stored_cid)
+        cid_order.insert(0, stored_cid)
+    uhash, used_cid = cadnav_get_uhash(cadnav_id, model_page, cid_order)
+    if not uhash:
+        return None, f"CadNav: uhash not found after trying cids {CADNAV_CIDS}"
 
     # Step 2: follow download link
     step2_url = f"https://www.cadnav.com/plus/download.php?open=2&id={cadnav_id}&uhash={uhash}"
-    cn.headers["Referer"] = step1_url
+    cn.headers["Referer"] = f"https://www.cadnav.com/plus/download.php?open=0&aid={cadnav_id}&cid={used_cid}"
     try:
         r2 = cn.get(step2_url, timeout=60, stream=True, allow_redirects=True)
         if r2.status_code != 200:
@@ -289,7 +299,8 @@ for m in batch:
     elif is_cadnav:
         cadnav_id = m.get("cadnav_id", "")
         print(f"  [CadNav]  {uid}: {m.get('model_name','')!r}  id={cadnav_id}")
-        path, fmt = download_from_cadnav(cadnav_id, uid)
+        stored_cid = m.get("cadnav_cid")
+        path, fmt = download_from_cadnav(cadnav_id, uid, stored_cid=stored_cid)
         time.sleep(2)
 
     else:
@@ -326,3 +337,4 @@ with open(debug_path, "w") as f:
         f.write("\nErrors:\n")
         for e in errors:
             f.write(f"  {e}\n")
+    f.write("\nNote: full body/diagnostic output is in GitHub Actions run log\n")
