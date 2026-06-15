@@ -37,7 +37,7 @@ class GrabCADClient:
         # Verify via community API (the endpoint confirmed working with cookies)
         try:
             r = self.s.get(f"{self.API}/models",
-                params={"search": "F-16", "per_page": 1}, timeout=15)
+                params={"query": "F-16", "per_page": 1}, timeout=15)
             print(f"GrabCAD: session test HTTP {r.status_code}")
             if r.status_code == 200:
                 data = r.json()
@@ -60,7 +60,7 @@ class GrabCADClient:
             return []
         try:
             r = self.s.get(f"{self.API}/models",
-                params={"search": query, "per_page": per_page, "sort": "relevance"},
+                params={"query": query, "per_page": per_page, "sort": "relevance"},
                 timeout=15)
             if r.status_code == 200:
                 data = r.json()
