@@ -34,24 +34,22 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4 playwright
-          playwright install chromium --with-deps
+      - run: pip install requests beautifulsoup4
 
       - name: Debug CadNav + GrabCAD
         env:
-          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
-          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
+          GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
+          GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
+          GRABCAD_USER:    ${{ secrets.GRABCAD_USER }}
         run: python scripts/debug_cadnav_grabcad.py
 
       - name: Search GrabCAD + CadNav
         if: ${{ github.event.inputs.debug_only != 'true' }}
         env:
-          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
-          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
-          BATCH_START:  ${{ github.event.inputs.batch_start || '0' }}
-          BATCH_SIZE:   ${{ github.event.inputs.batch_size  || '500' }}
+          GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
+          GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
+          BATCH_START:     ${{ github.event.inputs.batch_start || '0' }}
+          BATCH_SIZE:      ${{ github.event.inputs.batch_size  || '500' }}
         run: python scripts/search_grabcad_cadnav.py
 
       - name: Commit results
