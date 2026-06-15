@@ -1,0 +1,56 @@
+name: 6 - CadNav Scheduled Download (3 per run)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours = 12 runs/day = ~36 CadNav models/day
+  workflow_dispatch:
+    inputs:
+      reset_position:
+        description: 'Reset batch position to 0'
+        required: false
+        default: 'false'
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 trimesh
+
+      - name: Read batch position
+        id: pos
+        run: |
+          if [ "${{ github.event.inputs.reset_position }}" = "true" ]; then
+            echo "0" > data/cadnav_pos.txt
+          fi
+          POS=$(cat data/cadnav_pos.txt 2>/dev/null || echo "0")
+          echo "batch_start=$POS" >> $GITHUB_OUTPUT
+          echo "Current CadNav position: $POS"
+
+      - name: Download 3 CadNav models
+        run: |
+          cd scripts
+          python download_cadnav_only.py
+        env:
+          BATCH_START: ${{ steps.pos.outputs.batch_start }}
+          BATCH_SIZE: '3'
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/models.json data/cadnav_pos.txt data/download_debug_gc_cn.txt
+          git diff --staged --quiet || git commit -m "auto: CadNav batch pos=$(cat data/cadnav_pos.txt)"
+          git push origin main
