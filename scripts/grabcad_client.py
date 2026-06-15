@@ -1,10 +1,9 @@
 """
-GrabCAD client — uses Playwright headless Chrome for login (handles JS-based auth),
-then uses extracted cookies for all HTTP requests.
+GrabCAD client — Playwright headless Chrome with anti-detection settings.
 """
 import os, re, time, requests
 
-AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120"
+AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 class GrabCADClient:
     BASE = "https://grabcad.com"
@@ -18,62 +17,101 @@ class GrabCADClient:
         try:
             from playwright.sync_api import sync_playwright
         except ImportError:
-            print("GrabCAD: playwright not installed, falling back to requests login")
-            return self._login_requests(email, password)
+            print("GrabCAD: playwright not installed")
+            return False
 
-        print("GrabCAD: launching headless browser...")
+        print("GrabCAD: launching headless browser (stealth mode)...")
         try:
             with sync_playwright() as p:
                 browser = p.chromium.launch(
                     headless=True,
-                    args=["--no-sandbox", "--disable-dev-shm-usage"]
+                    args=[
+                        "--no-sandbox",
+                        "--disable-dev-shm-usage",
+                        "--disable-blink-features=AutomationControlled",
+                        "--disable-web-security",
+                        "--disable-features=IsolateOrigins,site-per-process",
+                    ]
                 )
-                ctx = browser.new_context(user_agent=AGENT)
+                ctx = browser.new_context(
+                    user_agent=AGENT,
+                    viewport={"width": 1280, "height": 800},
+                    locale="en-US",
+                    timezone_id="America/New_York",
+                    java_script_enabled=True,
+                )
                 page = ctx.new_page()
 
+                # Remove webdriver fingerprint
+                page.add_init_script("""
+                    Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                    Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
+                    Object.defineProperty(navigator, 'languages', {get: () => ['en-US','en']});
+                    window.chrome = {runtime: {}};
+                """)
+
+                print("  Navigating to login page...")
                 page.goto(f"{self.BASE}/login", wait_until="networkidle", timeout=30000)
-                time.sleep(1)
+                time.sleep(2)
+
+                print(f"  Page title: {page.title()}")
 
                 # Fill email
-                for sel in ['input[name="user[login]"]', 'input[type="email"]',
-                            '#user_login', 'input[placeholder*="mail" i]',
-                            'input[placeholder*="sername" i]']:
+                email_sel = None
+                for sel in ['input[type="email"]', 'input[name="user[login]"]',
+                            '#user_login', 'input[placeholder*="mail" i]']:
                     try:
-                        page.fill(sel, email, timeout=3000)
+                        page.wait_for_selector(sel, timeout=3000)
+                        page.fill(sel, email)
+                        email_sel = sel
                         print(f"  Email filled ({sel})")
                         break
                     except: pass
 
+                if not email_sel:
+                    print("  ERROR: could not find email field")
+                    print("  Page HTML snippet:", page.content()[:500])
+
+                time.sleep(0.5)
+
                 # Fill password
-                for sel in ['input[name="user[password]"]', 'input[type="password"]',
+                for sel in ['input[type="password"]', 'input[name="user[password]"]',
                             '#user_password']:
                     try:
-                        page.fill(sel, password, timeout=3000)
+                        page.wait_for_selector(sel, timeout=3000)
+                        page.fill(sel, password)
                         print(f"  Password filled ({sel})")
                         break
                     except: pass
 
-                # Submit
-                for sel in ['input[type="submit"]', 'button[type="submit"]',
-                            'button:has-text("Sign in")', 'input[value="Sign in"]']:
-                    try:
-                        page.click(sel, timeout=3000)
-                        print(f"  Clicked submit ({sel})")
-                        break
-                    except: pass
+                time.sleep(0.5)
 
-                # Wait for redirect away from /login
+                # Try submitting via keyboard Enter (more natural than click)
+                print("  Pressing Enter to submit...")
+                page.keyboard.press("Enter")
+
+                # Wait for navigation or error
                 try:
                     page.wait_for_url(
                         lambda url: "login" not in url.lower(),
-                        timeout=20000
+                        timeout=15000
                     )
                 except:
                     pass
 
-                time.sleep(2)
+                time.sleep(3)
                 final_url = page.url
                 print(f"  Final URL: {final_url}")
+
+                # Print any visible error messages
+                for err_sel in [".alert", ".flash", ".error", "[class*='error']",
+                                "[class*='alert']", "[class*='flash']"]:
+                    try:
+                        msgs = page.locator(err_sel).all_text_contents()
+                        if msgs:
+                            print(f"  Page messages ({err_sel}): {msgs}")
+                    except: pass
+
                 logged_in = "login" not in final_url.lower()
 
                 # Transfer cookies to requests session
@@ -87,45 +125,12 @@ class GrabCADClient:
                     self.s.headers["X-XSRF-TOKEN"] = requests.utils.unquote(xsrf)
 
                 browser.close()
-                if logged_in:
-                    print("GrabCAD: Playwright login SUCCESS")
-                else:
-                    print("GrabCAD: Playwright login FAILED (still on login page)")
+                print(f"GrabCAD: {'LOGIN OK' if logged_in else 'LOGIN FAILED'}")
                 return logged_in
 
         except Exception as e:
-            print(f"GrabCAD: Playwright login error: {e}")
+            print(f"GrabCAD: Playwright error: {e}")
             return False
-
-    def _login_requests(self, email, password):
-        """Fallback: plain HTTP POST (may not work on JS-heavy sites)."""
-        r = self.s.get(f"{self.BASE}/login", timeout=15)
-        if r.status_code != 200:
-            return False
-        csrf = None
-        for pattern in [
-            r'name="authenticity_token"\s+value="([^"]+)"',
-            r'<meta[^>]+name="csrf-token"[^>]+content="([^"]+)"',
-        ]:
-            m = re.search(pattern, r.text, re.I)
-            if m:
-                csrf = m.group(1)
-                break
-        if not csrf:
-            print("GrabCAD requests: CSRF not found")
-            return False
-        self.s.headers.update({
-            "X-CSRF-Token": csrf, "Referer": f"{self.BASE}/login",
-            "Origin": self.BASE,
-        })
-        r2 = self.s.post(f"{self.BASE}/login", data={
-            "authenticity_token": csrf,
-            "user[login]": email,
-            "user[password]": password,
-            "commit": "Sign in",
-        }, allow_redirects=True, timeout=15)
-        print(f"GrabCAD requests login: {r2.status_code}, url={r2.url}")
-        return "login" not in r2.url
 
     def search(self, query, per_page=8):
         if not self.logged_in:
