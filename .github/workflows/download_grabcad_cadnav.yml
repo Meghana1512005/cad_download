@@ -50,8 +50,8 @@ jobs:
 
       - name: Download models
         env:
-          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
-          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
+          GRABCAD_SESSION: ${{ secrets.GRABCAD_SESSION }}
+          GRABCAD_XSRF:    ${{ secrets.GRABCAD_XSRF }}
           BATCH_START:  ${{ github.event.inputs.batch_start || '0' }}
           BATCH_SIZE:   ${{ github.event.inputs.batch_size  || '50' }}
         run: python scripts/download_grabcad_cadnav.py

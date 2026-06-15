@@ -1,21 +1,22 @@
 """
 Download models found on GrabCAD and CadNav.
-- GrabCAD: login -> download ZIP -> extract best 3D file -> convert to GLB if possible
+- GrabCAD: cookie-based session -> download ZIP -> extract best 3D file -> convert to GLB if possible
 - CadNav:  2-step download (get uhash -> download file) -> convert to GLB if possible
 
 Files saved to: downloaded_models/{UID}/{UID}.{ext}
 GLB conversion attempted via trimesh (OBJ/STL/DAE/PLY -> GLB).
 """
-import json, os, re, time, zipfile, shutil, requests, tempfile
+import json, os, re, time, zipfile, shutil, requests, sys
+
+# Add scripts dir to path so grabcad_client import works
+sys.path.insert(0, os.path.dirname(__file__))
 from grabcad_client import GrabCADClient
 
 DATA         = os.path.join(os.path.dirname(__file__), "..", "data", "models.json")
 OUT_DIR      = os.path.join(os.path.dirname(__file__), "..", "downloaded_models")
 BATCH_START  = int(os.environ.get("BATCH_START", 0))
 BATCH_SIZE   = int(os.environ.get("BATCH_SIZE", 50))
-GRABCAD_USER = os.environ.get("GRABCAD_USER", "")
-GRABCAD_PASS = os.environ.get("GRABCAD_PASS", "")
-AGENT        = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120"
+AGENT        = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 # GLB conversion priority (trimesh-supported formats)
 CONVERT_EXTS = {'.obj', '.stl', '.dae', '.ply', '.glb', '.gltf'}
@@ -54,33 +55,33 @@ def best_file_in_zip(zf):
     return None
 
 # ── GrabCAD ───────────────────────────────────────────────────────────────────
-gc = None
-if GRABCAD_USER and GRABCAD_PASS:
-    print(f"Logging into GrabCAD ({GRABCAD_USER[:6]}***)...")
-    gc = GrabCADClient(GRABCAD_USER, GRABCAD_PASS)
-    if not gc.logged_in:
-        print("GrabCAD login failed")
-        gc = None
-    else:
-        print("GrabCAD ready")
+print("Initializing GrabCAD client (cookie-based)...")
+gc = GrabCADClient()  # reads GRABCAD_SESSION + GRABCAD_XSRF from env
+if not gc.logged_in:
+    print("WARNING: GrabCAD session not available — GrabCAD downloads will be skipped")
+    gc = None
+else:
+    print("GrabCAD ready")
 
 def download_from_grabcad(slug, uid):
     if not gc:
-        return None, "No GrabCAD session"
+        return None, "No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)"
     model_dir = os.path.join(OUT_DIR, uid)
     os.makedirs(model_dir, exist_ok=True)
     zip_path = os.path.join(model_dir, f"{uid}_grabcad.zip")
 
     ok = gc.download(slug, zip_path)
     if not ok or not os.path.exists(zip_path) or os.path.getsize(zip_path) < 500:
-        return None, "GrabCAD download failed or empty"
+        return None, "GrabCAD download failed or empty file"
 
     # Extract ZIP
     try:
         with zipfile.ZipFile(zip_path, 'r') as zf:
             best = best_file_in_zip(zf)
             if not best:
-                return None, "No usable 3D file in ZIP"
+                all_names = zf.namelist()
+                print(f"    ZIP contents: {all_names[:5]}")
+                return None, f"No usable 3D file in ZIP (has {len(all_names)} files)"
             ext = os.path.splitext(best)[1].lower()
             native_path = os.path.join(model_dir, f"{uid}{ext}")
             with zf.open(best) as src, open(native_path, 'wb') as dst:
@@ -93,41 +94,59 @@ def download_from_grabcad(slug, uid):
     glb_path = os.path.join(model_dir, f"{uid}.glb")
     if try_convert_to_glb(native_path, glb_path):
         return glb_path, "glb"
-    # Return native format
     return native_path, ext.lstrip('.')
 
 # ── CadNav ────────────────────────────────────────────────────────────────────
 cn = requests.Session()
-cn.headers["User-Agent"] = AGENT
+cn.headers.update({
+    "User-Agent": AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+})
 
 def download_from_cadnav(cadnav_id, uid):
     model_dir = os.path.join(OUT_DIR, uid)
     os.makedirs(model_dir, exist_ok=True)
 
+    # Pre-visit the model page to establish session cookie + Referer
+    model_page = f"https://www.cadnav.com/3d-models/model-{cadnav_id}.html"
+    try:
+        rp = cn.get(model_page, timeout=15, allow_redirects=True)
+        print(f"    CadNav model page HTTP {rp.status_code} (pre-visit)")
+    except Exception as e:
+        print(f"    CadNav model page pre-visit failed: {e} — continuing anyway")
+
     # Step 1: get intermediate page with uhash
     step1_url = f"https://www.cadnav.com/plus/download.php?open=0&aid={cadnav_id}&cid=3"
+    cn.headers["Referer"] = model_page
     try:
-        r1 = cn.get(step1_url, timeout=15)
+        r1 = cn.get(step1_url, timeout=20, allow_redirects=True)
         if r1.status_code != 200:
-            return None, f"CadNav step1 HTTP {r1.status_code}"
+            return None, f"CadNav step1 HTTP {r1.status_code} (url={r1.url})"
+
+        # Primary: match the full href
         uhash_match = re.search(
-            r'href="/plus/download\.php\?open=2&(?:amp;)?id=\d+&(?:amp;)?uhash=([a-f0-9]+)"',
+            r'href="[^"]*download\.php\?open=2&(?:amp;)?id=\d+&(?:amp;)?uhash=([a-f0-9A-F0-9]+)"',
             r1.text)
+        # Fallback: any uhash= in the page
         if not uhash_match:
-            # Try alternate format
-            uhash_match = re.search(r'uhash=([a-f0-9]+)', r1.text)
+            uhash_match = re.search(r'uhash=([a-f0-9A-F0-9]{8,})', r1.text)
+
         if not uhash_match:
-            return None, "CadNav: uhash not found in step1 page"
+            # Log first 500 chars of body to help diagnose
+            snippet = r1.text[:500].replace('\n', ' ')
+            return None, f"CadNav: uhash not found. Page starts: {snippet}"
         uhash = uhash_match.group(1)
     except Exception as e:
         return None, f"CadNav step1 error: {e}"
 
     # Step 2: follow download link
     step2_url = f"https://www.cadnav.com/plus/download.php?open=2&id={cadnav_id}&uhash={uhash}"
+    cn.headers["Referer"] = step1_url
     try:
         r2 = cn.get(step2_url, timeout=60, stream=True, allow_redirects=True)
         if r2.status_code != 200:
-            return None, f"CadNav step2 HTTP {r2.status_code}"
+            return None, f"CadNav step2 HTTP {r2.status_code} (url={r2.url})"
 
         # Detect extension from Content-Disposition or URL
         cd = r2.headers.get("Content-Disposition", "")
@@ -138,13 +157,17 @@ def download_from_cadnav(cadnav_id, uid):
             ext = os.path.splitext(r2.url.split('?')[0])[1].lower() or '.bin'
 
         native_path = os.path.join(model_dir, f"{uid}{ext}")
+        size = 0
         with open(native_path, 'wb') as f:
             for chunk in r2.iter_content(65536):
                 f.write(chunk)
+                size += len(chunk)
 
-        if os.path.getsize(native_path) < 500:
+        print(f"    CadNav downloaded {size} bytes, ext={ext}, CD={cd[:80]!r}")
+
+        if size < 500:
             os.remove(native_path)
-            return None, "CadNav: downloaded file too small"
+            return None, f"CadNav: downloaded file too small ({size} bytes)"
 
     except Exception as e:
         return None, f"CadNav step2 error: {e}"
@@ -157,38 +180,43 @@ def download_from_cadnav(cadnav_id, uid):
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 models = json.load(open(DATA))
+# Include both "Found on X" and "Download Failed" (retry failed ones)
 queue  = [m for m in models
-          if m.get("download_status") in ("Found on GrabCAD", "Found on CadNav")
-          and "Downloaded" not in str(m.get("download_status", ""))]
+          if m.get("download_status") in ("Found on GrabCAD", "Found on CadNav", "Download Failed")]
 batch  = queue[BATCH_START: BATCH_START + BATCH_SIZE]
 
-print(f"Queue: {len(queue)} | Batch: [{BATCH_START}:{BATCH_START+len(batch)}] ({len(batch)} models)\n")
+print(f"\nQueue: {len(queue)} | Batch: [{BATCH_START}:{BATCH_START+len(batch)}] ({len(batch)} models)\n")
 
-downloaded = failed = 0
+downloaded = failed = skipped = 0
+errors = []
 
 for m in batch:
     uid    = m["uid"]
     status = m.get("download_status", "")
 
-    if status == "Found on GrabCAD":
+    # Determine source: prefer source fields over status string
+    is_grabcad = bool(m.get("grabcad_slug")) and status in ("Found on GrabCAD", "Download Failed")
+    is_cadnav  = bool(m.get("cadnav_id"))   and status in ("Found on CadNav",  "Download Failed")
+    # If Download Failed, pick whichever source field exists
+    if status == "Download Failed":
+        is_grabcad = bool(m.get("grabcad_slug")) and not bool(m.get("cadnav_id"))
+        is_cadnav  = bool(m.get("cadnav_id"))
+
+    if is_grabcad:
         slug = m.get("grabcad_slug", "")
-        if not slug:
-            print(f"  [SKIP] {uid}: no grabcad_slug")
-            continue
         print(f"  [GrabCAD] {uid}: {m.get('model_name','')!r}  slug={slug}")
         path, fmt = download_from_grabcad(slug, uid)
         time.sleep(3)
 
-    elif status == "Found on CadNav":
+    elif is_cadnav:
         cadnav_id = m.get("cadnav_id", "")
-        if not cadnav_id:
-            print(f"  [SKIP] {uid}: no cadnav_id")
-            continue
         print(f"  [CadNav]  {uid}: {m.get('model_name','')!r}  id={cadnav_id}")
         path, fmt = download_from_cadnav(cadnav_id, uid)
         time.sleep(2)
 
     else:
+        print(f"  [SKIP] {uid}: status={status!r} no valid source fields")
+        skipped += 1
         continue
 
     if path and os.path.exists(path) and os.path.getsize(path) > 500:
@@ -202,11 +230,21 @@ for m in batch:
         m["download_status"] = "Download Failed"
         m["local_file"]      = ""
         failed += 1
+        errors.append(f"{uid}: {fmt}")
         print(f"    FAILED: {fmt}")
 
 json.dump(models, open(DATA, "w"), indent=2)
-print(f"\nDone. Downloaded: {downloaded} | Failed: {failed}")
+print(f"\nDone. Downloaded={downloaded} | Failed={failed} | Skipped={skipped}")
+if errors:
+    print("\nFailed models:")
+    for e in errors:
+        print(f"  {e}")
 
 # Write debug summary
-with open(os.path.join(os.path.dirname(DATA), "download_debug_gc_cn.txt"), "w") as f:
-    f.write(f"queue={len(queue)} batch={len(batch)} downloaded={downloaded} failed={failed}\n")
+debug_path = os.path.join(os.path.dirname(DATA), "download_debug_gc_cn.txt")
+with open(debug_path, "w") as f:
+    f.write(f"queue={len(queue)} batch={len(batch)} downloaded={downloaded} failed={failed} skipped={skipped}\n")
+    if errors:
+        f.write("\nErrors:\n")
+        for e in errors:
+            f.write(f"  {e}\n")
