@@ -1,4 +1,6 @@
-queue=66 batch=66 downloaded=66
-  3297 Not Found
+queue=0 batch=0 downloaded=0
+  2758 Not Found
   575 Downloaded
+  365 Found on GrabCAD
   37 Downloaded (shared)
+  174 Found on CadNav
