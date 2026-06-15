@@ -135,15 +135,18 @@ def download_from_grabcad(slug, uid):
                 print(f"    Direct URL download error: {e}")
 
     if not ok or not os.path.exists(zip_path) or os.path.getsize(zip_path) < 500:
-        # Log diagnostic info
+        # Log diagnostic info to file
+        diag_info = "GrabCAD diag: unknown"
         try:
             r_diag = gc.s.get(f"https://grabcad.com/library/{slug}/download",
                               allow_redirects=True, timeout=20)
-            snippet = r_diag.content[:200] if r_diag.content else b"(empty)"
-            print(f"    Diag: HTTP {r_diag.status_code} URL={r_diag.url[:80]} body={snippet}")
+            snippet = r_diag.content[:150].decode('utf-8', errors='replace') if r_diag.content else "(empty)"
+            diag_info = f"HTTP {r_diag.status_code} url={r_diag.url[:80]} body={snippet!r}"
+            print(f"    Diag: {diag_info}")
         except Exception as e:
+            diag_info = f"error: {e}"
             print(f"    Diag error: {e}")
-        return None, "GrabCAD download failed or empty file"
+        return None, f"GrabCAD: {diag_info}"
 
     # Extract ZIP
     try:
@@ -247,15 +250,15 @@ def download_from_cadnav(cadnav_id, uid, stored_cid=None):
         print(f"    CadNav downloaded {size} bytes, ext={ext}, CD={cd[:80]!r}")
 
         if size < 500:
-            # Log the content to understand the error
+            body_str = ""
             try:
                 with open(native_path, 'rb') as ff:
-                    body = ff.read().decode('utf-8', errors='replace')
-                print(f"    CadNav small response body: {body!r}")
+                    body_str = ff.read().decode('utf-8', errors='replace')
+                print(f"    CadNav small response body: {body_str!r}")
             except:
                 pass
             os.remove(native_path)
-            return None, f"CadNav: downloaded file too small ({size} bytes): check log above"
+            return None, f"CadNav({size}b): {body_str[:80]!r}"
 
     except Exception as e:
         return None, f"CadNav step2 error: {e}"
