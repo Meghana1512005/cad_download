@@ -1,11 +1,8 @@
-queue=536 batch=50 downloaded=3 failed=47 skipped=0
+queue=533 batch=50 downloaded=3 failed=47 skipped=0
 
 Errors:
   BRZ-005: GrabCAD download failed or empty file
   BRZ-016: GrabCAD download failed or empty file
-  CHN-059: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-068: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-071: CadNav: downloaded file too small (41 bytes): check log above
   CHN-099: CadNav: downloaded file too small (41 bytes): check log above
   CHN-102: CadNav: downloaded file too small (41 bytes): check log above
   CHN-103: CadNav: downloaded file too small (41 bytes): check log above
@@ -48,3 +45,8 @@ Errors:
   RUS-015: GrabCAD download failed or empty file
   RUS-016: GrabCAD download failed or empty file
   RUS-017: GrabCAD download failed or empty file
+  RUS-018: GrabCAD download failed or empty file
+  RUS-041: CadNav: downloaded file too small (41 bytes): check log above
+  RUS-046: CadNav: downloaded file too small (41 bytes): check log above
+
+Note: full body/diagnostic output is in GitHub Actions run log
