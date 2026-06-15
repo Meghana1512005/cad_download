@@ -1,11 +1,8 @@
-queue=530 batch=50 downloaded=3 failed=47 skipped=0
+queue=527 batch=50 downloaded=3 failed=47 skipped=0
 
 Errors:
-  BRZ-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  BRZ-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  CHN-112: CadNav(41b): "You have exceeded today's download limit."
-  CHN-113: CadNav(41b): "You have exceeded today's download limit."
-  CHN-115: CadNav(41b): "You have exceeded today's download limit."
+  BRZ-005: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/emb-110-bandeirante/files/download?c body='{"error":"Not found"}'
+  BRZ-016: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/embraer-emb-500-phenom/files/downloa body='{"error":"Not found"}'
   CHN-116: CadNav(41b): "You have exceeded today's download limit."
   CHN-118: CadNav(41b): "You have exceeded today's download limit."
   CHN-121: CadNav(41b): "You have exceeded today's download limit."
@@ -13,40 +10,43 @@ Errors:
   CHN-123: CadNav(41b): "You have exceeded today's download limit."
   CHN-128: CadNav(41b): "You have exceeded today's download limit."
   CHN-132: CadNav(41b): "You have exceeded today's download limit."
-  FRA-001: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  FRA-002: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-001: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/airbus-a310-transavia/files/download body='{"error":"Not found"}'
+  FRA-002: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/airbus-a319/files/download?cadid= body='{"error":"Not found"}'
   FRA-003: CadNav(41b): "You have exceeded today's download limit."
-  FRA-004: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-004: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/a321/files/download?cadid= body='{"error":"Not found"}'
   FRA-005: CadNav(41b): "You have exceeded today's download limit."
-  FRA-014: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  FRA-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-014: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/airbus-helicopters-as350-b3-ecureuil body='{"error":"Not found"}'
+  FRA-016: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/as365-n3-dauphine/files/download?cad body='{"error":"Not found"}'
   FRA-028: CadNav(41b): "You have exceeded today's download limit."
-  FRA-030: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  FRA-031: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-030: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/elp-3dgs1200p01-h120/files/download? body='{"error":"Not found"}'
+  FRA-031: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/h135-ansys-cfd/files/download?cadid= body='{"error":"Not found"}'
   FRA-063: CadNav(41b): "You have exceeded today's download limit."
   FRA-083: CadNav(41b): "You have exceeded today's download limit."
   FRA-084: CadNav(41b): "You have exceeded today's download limit."
-  FRA-086: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-086: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/sa341-gazelle/files/download?cadid= body='{"error":"Not found"}'
   GBR-007: CadNav(41b): "You have exceeded today's download limit."
-  IND-001: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  IND-001: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/agni-motor-95r/files/download?cadid= body='{"error":"Not found"}'
   ITA-001: CadNav(41b): "You have exceeded today's download limit."
-  ITA-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  ITA-007: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  POL-011: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  ROK-002: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  ROK-003: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  ROK-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-006: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-007: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ITA-005: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/aw139-rotor-blade/files/download?cad body='{"error":"Not found"}'
+  ITA-007: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/agustawestland-aw169/files/download? body='{"error":"Not found"}'
+  POL-011: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/pzl-130-orlik-tc-ii/files/download?c body='{"error":"Not found"}'
+  ROK-002: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/annex-k1/files/download?cadid= body='{"error":"Not found"}'
+  ROK-003: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/evtol-attack-aircraft-k21-concept-de body='{"error":"Not found"}'
+  ROK-005: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/kai-t-50-golden-eagle/files/download body='{"error":"Not found"}'
+  RUS-006: GrabCAD: HTTP 403 url=https://grabcad.com/library/antonov-an-124-ruslan-condor/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-007: GrabCAD: HTTP 403 url=https://grabcad.com/library/vlmu5200-140/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-011: CadNav(41b): "You have exceeded today's download limit."
-  RUS-015: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-017: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-018: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-015: GrabCAD: HTTP 403 url=https://grabcad.com/library/10t-32b-2inch-idler-sprocket/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-016: GrabCAD: HTTP 403 url=https://grabcad.com/library/rack-multifuncional-70-x-70/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-017: GrabCAD: HTTP 403 url=https://grabcad.com/library/antonov-an-72-coaler/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-018: GrabCAD: HTTP 403 url=https://grabcad.com/library/antonov-an-74-coaler/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-041: CadNav(41b): "You have exceeded today's download limit."
   RUS-046: CadNav(41b): "You have exceeded today's download limit."
   RUS-053: CadNav(41b): "You have exceeded today's download limit."
-  RUS-079: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
-  RUS-080: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-079: GrabCAD: HTTP 403 url=https://grabcad.com/library/mentor-1273-1001/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-080: GrabCAD: HTTP 403 url=https://grabcad.com/library/mercator-projection/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-082: GrabCAD: HTTP 403 url=https://grabcad.com/library/mil-mi-17/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
+  RUS-083: CadNav(41b): "You have exceeded today's download limit."
+  RUS-086: CadNav(41b): "You have exceeded today's download limit."
 
 Note: full body/diagnostic output is in GitHub Actions run log
