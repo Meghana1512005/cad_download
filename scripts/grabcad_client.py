@@ -1,20 +1,22 @@
 """
 GrabCAD client — cookie-based auth (GRABCAD_SESSION + GRABCAD_XSRF secrets).
+Uses /community/api/v1/models endpoint (confirmed working with session cookies).
 """
 import os, re, requests
 
 AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 class GrabCADClient:
-    BASE = "https://grabcad.com"
+    BASE    = "https://grabcad.com"
+    API     = "https://grabcad.com/community/api/v1"
 
     def __init__(self, email=None, password=None):
         self.s = requests.Session()
         self.s.headers.update({
-            "User-Agent": AGENT,
-            "Accept":     "application/json, text/plain, */*",
-            "Referer":    "https://grabcad.com/library",
-            "Origin":     "https://grabcad.com",
+            "User-Agent":   AGENT,
+            "Accept":       "application/json, text/plain, */*",
+            "Referer":      "https://grabcad.com/library",
+            "Origin":       "https://grabcad.com",
         })
         self.logged_in = self._init_from_cookies()
 
@@ -32,28 +34,22 @@ class GrabCADClient:
         self.s.cookies.set("XSRF-TOKEN",       xsrf_val,    domain="grabcad.com")
         self.s.headers["X-XSRF-TOKEN"] = requests.utils.unquote(xsrf_val)
 
-        # Verify by doing an actual search (not a user endpoint)
+        # Verify via community API (the endpoint confirmed working with cookies)
         try:
-            r = self.s.get(f"{self.BASE}/library.json",
-                params={"search": "F-16", "per_page": 3, "sort": "relevance"},
-                headers={"Accept": "application/json"}, timeout=15)
-            print(f"GrabCAD: search test HTTP {r.status_code}")
+            r = self.s.get(f"{self.API}/models",
+                params={"search": "F-16", "per_page": 1}, timeout=15)
+            print(f"GrabCAD: session test HTTP {r.status_code}")
             if r.status_code == 200:
                 data = r.json()
-                models = data if isinstance(data, list) else data.get("models", [])
-                if models:
-                    print(f"GrabCAD: session valid — test search returned {len(models)} results")
-                    print(f"  First result: {models[0].get('name','?')!r}")
-                    return True
-                else:
-                    print("GrabCAD: search returned 0 results (session may still be valid)")
-                    return True  # 200 with empty list = session OK, just no results
-            elif r.status_code == 401:
-                print("GrabCAD: 401 — session expired, update GRABCAD_SESSION + GRABCAD_XSRF")
-            elif r.status_code == 403:
-                print("GrabCAD: 403 — access denied")
+                items = data if isinstance(data, list) else data.get("models", data.get("results", []))
+                print(f"GrabCAD: session valid — test returned {len(items)} result(s)")
+                if items and isinstance(items[0], dict):
+                    print(f"  Sample: {items[0].get('name','?')!r}")
+                return True
+            elif r.status_code in (401, 403):
+                print("GrabCAD: session expired — please update GRABCAD_SESSION + GRABCAD_XSRF")
             else:
-                print(f"GrabCAD: unexpected {r.status_code}: {r.text[:150]}")
+                print(f"GrabCAD: unexpected {r.status_code}: {r.text[:200]}")
             return False
         except Exception as e:
             print(f"GrabCAD: session check error: {e}")
@@ -63,21 +59,30 @@ class GrabCADClient:
         if not self.logged_in:
             return []
         try:
-            r = self.s.get(f"{self.BASE}/library.json",
+            r = self.s.get(f"{self.API}/models",
                 params={"search": query, "per_page": per_page, "sort": "relevance"},
-                headers={"Accept": "application/json"}, timeout=15)
+                timeout=15)
             if r.status_code == 200:
                 data = r.json()
-                models = data if isinstance(data, list) else data.get("models", [])
-                return [{"id": m.get("id"), "slug": m.get("slug", ""),
-                         "name": m.get("name", ""),
-                         "url": f"{self.BASE}/library/{m.get('slug', '')}",
-                         "dl_url": f"{self.BASE}/library/{m.get('slug', '')}/download"}
-                        for m in models[:per_page] if isinstance(m, dict)]
+                items = data if isinstance(data, list) else data.get("models", data.get("results", []))
+                results = []
+                for m in items[:per_page]:
+                    if not isinstance(m, dict):
+                        continue
+                    slug = (m.get("slug") or m.get("url_identifier") or
+                            re.sub(r'[^a-z0-9]+', '-', m.get("name","").lower()).strip('-'))
+                    results.append({
+                        "id":   m.get("id"),
+                        "slug": slug,
+                        "name": m.get("name", ""),
+                        "url":  f"{self.BASE}/library/{slug}",
+                        "dl_url": f"{self.BASE}/library/{slug}/download",
+                    })
+                return results
             if r.status_code == 429:
                 print("GrabCAD: rate limited (429)")
             else:
-                print(f"GrabCAD search HTTP {r.status_code}")
+                print(f"GrabCAD search HTTP {r.status_code}: {r.text[:100]}")
         except Exception as e:
             print(f"GrabCAD search error: {e}")
         return []
