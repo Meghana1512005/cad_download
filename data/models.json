@@ -435,10 +435,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-50688.html",
+    "cadnav_id": "50688",
+    "cadnav_name": "CJ-10 Chinese Missile"
   },
   {
     "uid": "CHN-012",
@@ -570,10 +574,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-50309.html",
+    "cadnav_id": "50309",
+    "cadnav_name": "DF-21 Carrier Killer Missile"
   },
   {
     "uid": "CHN-022",
@@ -582,10 +590,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47756.html",
+    "cadnav_id": "47756",
+    "cadnav_name": "DF-26 Ballistic Missile"
   },
   {
     "uid": "CHN-023",
@@ -624,10 +636,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53330.html",
+    "cadnav_id": "53330",
+    "cadnav_name": "China DF-31 Intercontinental Ballistic Missile"
   },
   {
     "uid": "CHN-026",
@@ -1038,10 +1054,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53714.html",
+    "cadnav_id": "53714",
+    "cadnav_name": "Hongdu JL-10 Fighter Trainer"
   },
   {
     "uid": "CHN-057",
@@ -1050,10 +1070,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53714.html",
+    "cadnav_id": "53714",
+    "cadnav_name": "Hongdu JL-10 Fighter Trainer"
   },
   {
     "uid": "CHN-058",
@@ -1077,10 +1101,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53714.html",
+    "cadnav_id": "53714",
+    "cadnav_name": "Hongdu JL-10 Fighter Trainer"
   },
   {
     "uid": "CHN-060",
@@ -1191,10 +1219,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47007.html",
+    "cadnav_id": "47007",
+    "cadnav_name": "Chinese KJ-500 AEW&C"
   },
   {
     "uid": "CHN-069",
@@ -1227,10 +1259,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47827.html",
+    "cadnav_id": "47827",
+    "cadnav_name": "Luyang II Class Destroyer"
   },
   {
     "uid": "CHN-072",
@@ -1611,10 +1647,14 @@
     "manufacturer": "CHN",
     "nations": 2,
     "countries": "Cambodia, Myanmar",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47378.html",
+    "cadnav_id": "47378",
+    "cadnav_name": "Animated SH-2 Seasprite"
   },
   {
     "uid": "CHN-100",
@@ -1653,10 +1693,14 @@
     "manufacturer": "CHN",
     "nations": 13,
     "countries": "Bangladesh, Cambodia, Cameroon, Chad, China, DR Congo, Guinea, Myanmar, Oman, Pakistan, Sri Lanka, Sudan, United Arab Emirates",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-49290.html",
+    "cadnav_id": "49290",
+    "cadnav_name": "Type 59D Tank"
   },
   {
     "uid": "CHN-103",
@@ -1665,10 +1709,14 @@
     "manufacturer": "CHN",
     "nations": 4,
     "countries": "Bangladesh, Chad, China, Sudan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-49008.html",
+    "cadnav_id": "49008",
+    "cadnav_name": "7.62\u00c3\u009751mm NATO Rifle Cartridge"
   },
   {
     "uid": "CHN-104",
@@ -1773,10 +1821,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47537.html",
+    "cadnav_id": "47537",
+    "cadnav_name": "Type 79 Submachine Gun"
   },
   {
     "uid": "CHN-113",
@@ -1785,10 +1837,14 @@
     "manufacturer": "CHN",
     "nations": 4,
     "countries": "China, Pakistan, Sri Lanka, Thailand",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-48048.html",
+    "cadnav_id": "48048",
+    "cadnav_name": "Type 85 Artillery Gun"
   },
   {
     "uid": "CHN-114",
@@ -1809,10 +1865,14 @@
     "manufacturer": "CHN",
     "nations": 3,
     "countries": "Bangladesh, China, Japan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51012.html",
+    "cadnav_id": "51012",
+    "cadnav_name": "Chinese Type 96 Tank"
   },
   {
     "uid": "CHN-116",
@@ -1821,10 +1881,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "Japan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-52799.html",
+    "cadnav_id": "52799",
+    "cadnav_name": "China Type 99 MBT"
   },
   {
     "uid": "CHN-117",
@@ -1848,10 +1912,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51028.html",
+    "cadnav_id": "51028",
+    "cadnav_name": "WZ-19 Chinese Attack Helicopter"
   },
   {
     "uid": "CHN-119",
@@ -1887,10 +1955,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51028.html",
+    "cadnav_id": "51028",
+    "cadnav_name": "WZ-19 Chinese Attack Helicopter"
   },
   {
     "uid": "CHN-122",
@@ -1899,10 +1971,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51028.html",
+    "cadnav_id": "51028",
+    "cadnav_name": "WZ-19 Chinese Attack Helicopter"
   },
   {
     "uid": "CHN-123",
@@ -1911,10 +1987,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54115.html",
+    "cadnav_id": "54115",
+    "cadnav_name": "J-20 Mighty Dragon"
   },
   {
     "uid": "CHN-124",
@@ -1971,10 +2051,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54599.html",
+    "cadnav_id": "54599",
+    "cadnav_name": "YJ-12 Anti-ship Cruise Missile"
   },
   {
     "uid": "CHN-129",
@@ -2019,10 +2103,14 @@
     "manufacturer": "CHN",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54599.html",
+    "cadnav_id": "54599",
+    "cadnav_name": "YJ-12 Anti-ship Cruise Missile"
   },
   {
     "uid": "CHN-133",
@@ -2577,10 +2665,14 @@
     "manufacturer": "FRA",
     "nations": 5,
     "countries": "China, Ecuador, Oman, Senegal, Seychelles",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-35959.html",
+    "cadnav_id": "35959",
+    "cadnav_name": "China Eastern Airlines Airbus A320"
   },
   {
     "uid": "FRA-004",
@@ -2601,10 +2693,14 @@
     "manufacturer": "FRA",
     "nations": 7,
     "countries": "Belgium, Finland, Germany, Luxembourg, Malaysia, Spain, Turkiye",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-45564.html",
+    "cadnav_id": "45564",
+    "cadnav_name": "Airbus A400M"
   },
   {
     "uid": "FRA-006",
@@ -2916,10 +3012,14 @@
     "manufacturer": "FRA",
     "nations": 2,
     "countries": "Burkina Faso, Finland",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36172.html",
+    "cadnav_id": "36172",
+    "cadnav_name": "Eurocopter AS332 Super Puma"
   },
   {
     "uid": "FRA-029",
@@ -3363,10 +3463,14 @@
     "manufacturer": "FRA",
     "nations": 2,
     "countries": "Cyprus, Finland",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-46054.html",
+    "cadnav_id": "46054",
+    "cadnav_name": "Dassault Rafale Fighter"
   },
   {
     "uid": "FRA-064",
@@ -3621,10 +3725,14 @@
     "manufacturer": "FRA",
     "nations": 5,
     "countries": "Lebanon, Madagascar, Morocco, Oman, Tunisia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36807.html",
+    "cadnav_id": "36807",
+    "cadnav_name": "Alouette II Helicopter"
   },
   {
     "uid": "FRA-084",
@@ -3633,10 +3741,14 @@
     "manufacturer": "FRA",
     "nations": 7,
     "countries": "Belgium, Cameroon, Central African Republic, Finland, India, Pakistan, Togo",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36165.html",
+    "cadnav_id": "36165",
+    "cadnav_name": "Alouette III Attack Helicopter"
   },
   {
     "uid": "FRA-085",
@@ -3972,10 +4084,14 @@
     "manufacturer": "GBR",
     "nations": 1,
     "countries": "Germany",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36729.html",
+    "cadnav_id": "36729",
+    "cadnav_name": "EF-2000 Eurofighter Typhoon"
   },
   {
     "uid": "GBR-008",
@@ -4689,10 +4805,14 @@
     "manufacturer": "ITA",
     "nations": 10,
     "countries": "Algeria, Canada, Denmark, Italy, Japan, Nigeria, Norway, Poland, Portugal, Turkiye",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36173.html",
+    "cadnav_id": "36173",
+    "cadnav_name": "AW101 Helicopter Merlin"
   },
   {
     "uid": "ITA-002",
@@ -5343,10 +5463,14 @@
     "manufacturer": "RUS",
     "nations": 6,
     "countries": "Chad, Dominican Republic, Mongolia, Myanmar, Syria, Ukraine",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-46888.html",
+    "cadnav_id": "46888",
+    "cadnav_name": "An-24 Aircraft"
   },
   {
     "uid": "RUS-012",
@@ -5751,10 +5875,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47979.html",
+    "cadnav_id": "47979",
+    "cadnav_name": "Su-30 Flanker Fighter Aircraft"
   },
   {
     "uid": "RUS-042",
@@ -5811,10 +5939,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Mauritius",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-26573.html",
+    "cadnav_id": "26573",
+    "cadnav_name": "Go fast boat"
   },
   {
     "uid": "RUS-047",
@@ -5901,10 +6033,14 @@
     "manufacturer": "RUS",
     "nations": 20,
     "countries": "Algeria, Angola, Armenia, Azerbaijan, Belarus, Chad, China, DR Congo, Dominican Republic, Egypt, India, Iran, Japan, Jordan, Pakistan, Russia, South Korea, Sudan, Syria, Uzbekistan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-50173.html",
+    "cadnav_id": "50173",
+    "cadnav_name": "IL-76 Airplane"
   },
   {
     "uid": "RUS-054",
@@ -6273,10 +6409,14 @@
     "manufacturer": "RUS",
     "nations": 46,
     "countries": "Algeria, Angola, Armenia, Azerbaijan, Belarus, Bulgaria, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, DR Congo, Djibouti, Egypt, Eritrea, Ethiopia, Gabon, Georgia, Hungary, Iceland, Kazakhstan, Kyrgyzstan, Luxembourg, Mali, Malta, Mozambique, Myanmar, Namibia, Nigeria, Pakistan, Poland, Russia, Rwanda, Senegal, Serbia, Seychelles, Slovakia, South Sudan, Sri Lanka, Sudan, Syria, Tajikistan, Turkmenistan, Uganda, Ukraine, Uzbekistan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-43061.html",
+    "cadnav_id": "43061",
+    "cadnav_name": "Mi-24 Attack Helicopter"
   },
   {
     "uid": "RUS-084",
@@ -6309,10 +6449,14 @@
     "manufacturer": "RUS",
     "nations": 4,
     "countries": "Algeria, Iraq, Russia, Uganda",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-37442.html",
+    "cadnav_id": "37442",
+    "cadnav_name": "Mi-28N Havoc Attack Helicopter"
   },
   {
     "uid": "RUS-087",
@@ -6357,10 +6501,14 @@
     "manufacturer": "RUS",
     "nations": 43,
     "countries": "Algeria, Angola, Armenia, Azerbaijan, Belarus, Bosnia-Herzegovina, Burkina Faso, Burundi, Central African Republic, Chad, China, Cuba, DR Congo, Djibouti, Dominican Republic, Egypt, Ethiopia, Gabon, Georgia, Japan, Kyrgyzstan, Lithuania, Luxembourg, Mali, Malta, Mongolia, Mozambique, Myanmar, Namibia, Peru, Poland, Russia, Serbia, South Korea, Sudan, Syria, Tajikistan, Togo, Turkmenistan, Ukraine, United Arab Emirates, Uzbekistan, Vietnam",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-55076.html",
+    "cadnav_id": "55076",
+    "cadnav_name": "Mi-2 Light Helicopter"
   },
   {
     "uid": "RUS-091",
@@ -6381,10 +6529,14 @@
     "manufacturer": "RUS",
     "nations": 12,
     "countries": "Cuba, Cyprus, Dominican Republic, Guinea, India, Japan, Libya, Mozambique, Namibia, South Korea, Syria, Uganda",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47963.html",
+    "cadnav_id": "47963",
+    "cadnav_name": "MiG-21 Fishbed Supersonic Jet Fighter"
   },
   {
     "uid": "RUS-093",
@@ -6405,10 +6557,14 @@
     "manufacturer": "RUS",
     "nations": 5,
     "countries": "Algeria, Djibouti, Egypt, Eritrea, Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-48119.html",
+    "cadnav_id": "48119",
+    "cadnav_name": "Russia MiG-29 Fulcrum"
   },
   {
     "uid": "RUS-095",
@@ -6429,10 +6585,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-48119.html",
+    "cadnav_id": "48119",
+    "cadnav_name": "Russia MiG-29 Fulcrum"
   },
   {
     "uid": "RUS-097",
@@ -6573,10 +6733,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51976.html",
+    "cadnav_id": "51976",
+    "cadnav_name": "Kamov Ka-27 Military Helicopter"
   },
   {
     "uid": "RUS-109",
@@ -6585,10 +6749,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-11488.html",
+    "cadnav_id": "11488",
+    "cadnav_name": "British Vosper 73 motor torpedo boat"
   },
   {
     "uid": "RUS-110",
@@ -6597,10 +6765,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-52288.html",
+    "cadnav_id": "52288",
+    "cadnav_name": "Aston Martin One-77"
   },
   {
     "uid": "RUS-111",
@@ -6621,10 +6793,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54056.html",
+    "cadnav_id": "54056",
+    "cadnav_name": "U.S Air Force F-22A Raptor"
   },
   {
     "uid": "RUS-113",
@@ -6693,10 +6869,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Japan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-52602.html",
+    "cadnav_id": "52602",
+    "cadnav_name": "SCUD-B Missile Launcher"
   },
   {
     "uid": "RUS-119",
@@ -6753,10 +6933,14 @@
     "manufacturer": "RUS",
     "nations": 6,
     "countries": "Algeria, Iran, Russia, Sudan, Syria, Ukraine",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-46626.html",
+    "cadnav_id": "46626",
+    "cadnav_name": "Su-24 Fencer"
   },
   {
     "uid": "RUS-124",
@@ -6765,10 +6949,14 @@
     "manufacturer": "RUS",
     "nations": 24,
     "countries": "Angola, Armenia, Azerbaijan, Belarus, Bulgaria, Chad, DR Congo, Djibouti, Eritrea, Ethiopia, Gabon, Georgia, Iraq, Japan, Kazakhstan, Kyrgyzstan, Niger, Peru, Russia, South Korea, Sudan, Turkmenistan, Ukraine, Uzbekistan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-46052.html",
+    "cadnav_id": "46052",
+    "cadnav_name": "Sukhoi Su-25"
   },
   {
     "uid": "RUS-125",
@@ -6801,10 +6989,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "China",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53198.html",
+    "cadnav_id": "53198",
+    "cadnav_name": "Su-33 Carrier-based Fighter"
   },
   {
     "uid": "RUS-128",
@@ -6813,10 +7005,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-36168.html",
+    "cadnav_id": "36168",
+    "cadnav_name": "Sukhoi Su-34 Fighter Bomber"
   },
   {
     "uid": "RUS-129",
@@ -6825,10 +7021,14 @@
     "manufacturer": "RUS",
     "nations": 2,
     "countries": "China, Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47566.html",
+    "cadnav_id": "47566",
+    "cadnav_name": "Su-35 Flanker-E Fighter Aircraft"
   },
   {
     "uid": "RUS-130",
@@ -6837,10 +7037,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54153.html",
+    "cadnav_id": "54153",
+    "cadnav_name": "Sukhoi Su-57 Stealth Fighter"
   },
   {
     "uid": "RUS-131",
@@ -6897,10 +7101,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Russia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-47801.html",
+    "cadnav_id": "47801",
+    "cadnav_name": "Tu-95 Bear Bomber"
   },
   {
     "uid": "RUS-136",
@@ -6981,10 +7189,14 @@
     "manufacturer": "RUS",
     "nations": 1,
     "countries": "Pakistan",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53569.html",
+    "cadnav_id": "53569",
+    "cadnav_name": "KRISS Vector SMG"
   },
   {
     "uid": "RUS-143",
@@ -7065,10 +7277,14 @@
     "manufacturer": "RUS",
     "nations": 13,
     "countries": "Algeria, Central African Republic, Chad, Egypt, India, Iran, Kyrgyzstan, Nigeria, Peru, Poland, Russia, Turkmenistan, Zambia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-52756.html",
+    "cadnav_id": "52756",
+    "cadnav_name": "Russian ZSU-23-4 Shilka SPAAG"
   },
   {
     "uid": "RUS-150",
@@ -7377,10 +7593,14 @@
     "manufacturer": "UNK",
     "nations": 3,
     "countries": "Algeria, Qatar, Thailand",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-51147.html",
+    "cadnav_id": "51147",
+    "cadnav_name": "Airbus A340-300 Jet Airliner"
   },
   {
     "uid": "UNK-010",
@@ -7665,10 +7885,14 @@
     "manufacturer": "UNK",
     "nations": 1,
     "countries": "United Arab Emirates",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54620.html",
+    "cadnav_id": "54620",
+    "cadnav_name": "AH-64 Apache Art"
   },
   {
     "uid": "UNK-034",
@@ -7677,10 +7901,14 @@
     "manufacturer": "UNK",
     "nations": 2,
     "countries": "Canada, Saudi Arabia",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-46946.html",
+    "cadnav_id": "46946",
+    "cadnav_name": "AH-6 Little Bird Helicopter"
   },
   {
     "uid": "UNK-035",
@@ -7917,10 +8145,14 @@
     "manufacturer": "UNK",
     "nations": 1,
     "countries": "Brazil",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-53756.html",
+    "cadnav_id": "53756",
+    "cadnav_name": "AMX-30 Roland"
   },
   {
     "uid": "UNK-055",
@@ -8433,10 +8665,14 @@
     "manufacturer": "UNK",
     "nations": 1,
     "countries": "Spain",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-54184.html",
+    "cadnav_id": "54184",
+    "cadnav_name": "AV-8B Harrier II"
   },
   {
     "uid": "UNK-098",
@@ -8673,10 +8909,14 @@
     "manufacturer": "UNK",
     "nations": 2,
     "countries": "Azerbaijan, Cyprus",
-    "download_status": "Not Found",
+    "download_status": "Found on CadNav",
     "sketchfab_id": null,
     "sketchfab_name": null,
-    "local_file": null
+    "local_file": null,
+    "source_site": "CadNav",
+    "source_url": "https://www.cadnav.com/3d-models/model-52606.html",
+    "cadnav_id": "52606",
+    "cadnav_name": "Wiesel Ozelot Light Air Defence System"
   },
   {
     "uid": "UNK-118",
