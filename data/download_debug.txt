@@ -1,6 +1,6 @@
 queue=0 batch=0 downloaded=0
   2758 Not Found
-  575 Downloaded
+  578 Downloaded
   365 Found on GrabCAD
   37 Downloaded (shared)
-  174 Found on CadNav
+  171 Found on CadNav
