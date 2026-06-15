@@ -34,7 +34,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install requests beautifulsoup4
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install chromium --with-deps
 
       - name: Debug CadNav + GrabCAD
         env:
