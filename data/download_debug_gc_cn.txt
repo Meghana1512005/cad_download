@@ -1,1 +1,50 @@
-queue=539 batch=50 downloaded=0 failed=50
+queue=539 batch=50 downloaded=3 failed=47 skipped=0
+
+Errors:
+  BRZ-005: GrabCAD download failed or empty file
+  BRZ-016: GrabCAD download failed or empty file
+  CHN-025: CadNav: downloaded file too small (41 bytes)
+  CHN-056: CadNav: downloaded file too small (41 bytes)
+  CHN-057: CadNav: downloaded file too small (41 bytes)
+  CHN-059: CadNav: downloaded file too small (41 bytes)
+  CHN-068: CadNav: downloaded file too small (41 bytes)
+  CHN-071: CadNav: downloaded file too small (41 bytes)
+  CHN-099: CadNav: downloaded file too small (41 bytes)
+  CHN-102: CadNav: downloaded file too small (41 bytes)
+  CHN-103: CadNav: downloaded file too small (41 bytes)
+  CHN-112: CadNav: downloaded file too small (41 bytes)
+  CHN-113: CadNav: downloaded file too small (41 bytes)
+  CHN-115: CadNav: downloaded file too small (41 bytes)
+  CHN-116: CadNav: downloaded file too small (41 bytes)
+  CHN-118: CadNav: downloaded file too small (41 bytes)
+  CHN-121: CadNav: downloaded file too small (41 bytes)
+  CHN-122: CadNav: downloaded file too small (41 bytes)
+  CHN-123: CadNav: downloaded file too small (41 bytes)
+  CHN-128: CadNav: downloaded file too small (41 bytes)
+  CHN-132: CadNav: downloaded file too small (41 bytes)
+  FRA-001: GrabCAD download failed or empty file
+  FRA-002: GrabCAD download failed or empty file
+  FRA-003: CadNav: downloaded file too small (41 bytes)
+  FRA-004: GrabCAD download failed or empty file
+  FRA-005: CadNav: downloaded file too small (41 bytes)
+  FRA-014: GrabCAD download failed or empty file
+  FRA-016: GrabCAD download failed or empty file
+  FRA-028: CadNav: downloaded file too small (41 bytes)
+  FRA-030: GrabCAD download failed or empty file
+  FRA-031: GrabCAD download failed or empty file
+  FRA-063: CadNav: downloaded file too small (41 bytes)
+  FRA-083: CadNav: downloaded file too small (41 bytes)
+  FRA-084: CadNav: downloaded file too small (41 bytes)
+  FRA-086: GrabCAD download failed or empty file
+  GBR-007: CadNav: downloaded file too small (41 bytes)
+  IND-001: GrabCAD download failed or empty file
+  ITA-001: CadNav: downloaded file too small (41 bytes)
+  ITA-005: GrabCAD download failed or empty file
+  ITA-007: GrabCAD download failed or empty file
+  POL-011: GrabCAD download failed or empty file
+  ROK-002: GrabCAD download failed or empty file
+  ROK-003: GrabCAD download failed or empty file
+  ROK-005: GrabCAD download failed or empty file
+  RUS-006: GrabCAD download failed or empty file
+  RUS-007: GrabCAD download failed or empty file
+  RUS-011: CadNav: downloaded file too small (41 bytes)
