@@ -63,6 +63,50 @@ if not gc.logged_in:
 else:
     print("GrabCAD ready")
 
+def find_grabcad_direct_url(slug):
+    """Try to find a direct file download URL via the GrabCAD API."""
+    try:
+        # Search for the model to get its ID
+        r = gc.s.get(f"{gc.API}/models",
+                     params={"query": slug.replace("-", " "), "per_page": 5}, timeout=15)
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        items = data if isinstance(data, list) else data.get("models", data.get("results", []))
+        # Find the matching slug
+        mid = None
+        for m in items:
+            m_slug = (m.get("slug") or m.get("url_identifier") or "")
+            if m_slug == slug or slug in m_slug:
+                mid = m.get("id")
+                break
+        if not mid and items:
+            mid = items[0].get("id")
+        if not mid:
+            return None
+        # Try model detail endpoint for file list
+        r2 = gc.s.get(f"{gc.API}/models/{mid}", timeout=15)
+        if r2.status_code == 200:
+            detail = r2.json()
+            # Look for file download URLs in the response
+            for key in ("files", "cad_files", "documents"):
+                files = detail.get(key, [])
+                if isinstance(files, list):
+                    for f in files:
+                        url = f.get("url") or f.get("download_url") or f.get("public_url")
+                        if url:
+                            return url
+        # Try direct API download endpoint
+        r3 = gc.s.get(f"{gc.BASE}/library/{slug}/download/free",
+                      allow_redirects=False, timeout=15)
+        if r3.status_code in (301, 302, 303, 307, 308):
+            loc = r3.headers.get("Location", "")
+            if loc and not "grabcad.com/library" in loc:
+                return loc  # External URL (S3 etc)
+    except Exception as e:
+        print(f"    GrabCAD API probe error: {e}")
+    return None
+
 def download_from_grabcad(slug, uid):
     if not gc:
         return None, "No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)"
@@ -70,8 +114,35 @@ def download_from_grabcad(slug, uid):
     os.makedirs(model_dir, exist_ok=True)
     zip_path = os.path.join(model_dir, f"{uid}_grabcad.zip")
 
+    # First try: direct /download endpoint
     ok = gc.download(slug, zip_path)
+
+    # If that fails, try to find a direct URL via API
     if not ok or not os.path.exists(zip_path) or os.path.getsize(zip_path) < 500:
+        print(f"    Direct download failed, probing GrabCAD API...")
+        direct_url = find_grabcad_direct_url(slug)
+        if direct_url:
+            print(f"    Found direct URL: {direct_url[:80]}")
+            try:
+                r = gc.s.get(direct_url, stream=True, timeout=60, allow_redirects=True)
+                if r.status_code == 200:
+                    with open(zip_path, "wb") as f:
+                        for chunk in r.iter_content(65536):
+                            f.write(chunk)
+                    if os.path.getsize(zip_path) > 500:
+                        ok = True
+            except Exception as e:
+                print(f"    Direct URL download error: {e}")
+
+    if not ok or not os.path.exists(zip_path) or os.path.getsize(zip_path) < 500:
+        # Log diagnostic info
+        try:
+            r_diag = gc.s.get(f"https://grabcad.com/library/{slug}/download",
+                              allow_redirects=True, timeout=20)
+            snippet = r_diag.content[:200] if r_diag.content else b"(empty)"
+            print(f"    Diag: HTTP {r_diag.status_code} URL={r_diag.url[:80]} body={snippet}")
+        except Exception as e:
+            print(f"    Diag error: {e}")
         return None, "GrabCAD download failed or empty file"
 
     # Extract ZIP
@@ -166,8 +237,15 @@ def download_from_cadnav(cadnav_id, uid):
         print(f"    CadNav downloaded {size} bytes, ext={ext}, CD={cd[:80]!r}")
 
         if size < 500:
+            # Log the content to understand the error
+            try:
+                with open(native_path, 'rb') as ff:
+                    body = ff.read().decode('utf-8', errors='replace')
+                print(f"    CadNav small response body: {body!r}")
+            except:
+                pass
             os.remove(native_path)
-            return None, f"CadNav: downloaded file too small ({size} bytes)"
+            return None, f"CadNav: downloaded file too small ({size} bytes): check log above"
 
     except Exception as e:
         return None, f"CadNav step2 error: {e}"
