@@ -1,52 +1,52 @@
-queue=533 batch=50 downloaded=3 failed=47 skipped=0
+queue=530 batch=50 downloaded=3 failed=47 skipped=0
 
 Errors:
-  BRZ-005: GrabCAD download failed or empty file
-  BRZ-016: GrabCAD download failed or empty file
-  CHN-099: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-102: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-103: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-112: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-113: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-115: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-116: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-118: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-121: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-122: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-123: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-128: CadNav: downloaded file too small (41 bytes): check log above
-  CHN-132: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-001: GrabCAD download failed or empty file
-  FRA-002: GrabCAD download failed or empty file
-  FRA-003: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-004: GrabCAD download failed or empty file
-  FRA-005: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-014: GrabCAD download failed or empty file
-  FRA-016: GrabCAD download failed or empty file
-  FRA-028: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-030: GrabCAD download failed or empty file
-  FRA-031: GrabCAD download failed or empty file
-  FRA-063: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-083: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-084: CadNav: downloaded file too small (41 bytes): check log above
-  FRA-086: GrabCAD download failed or empty file
-  GBR-007: CadNav: downloaded file too small (41 bytes): check log above
-  IND-001: GrabCAD download failed or empty file
-  ITA-001: CadNav: downloaded file too small (41 bytes): check log above
-  ITA-005: GrabCAD download failed or empty file
-  ITA-007: GrabCAD download failed or empty file
-  POL-011: GrabCAD download failed or empty file
-  ROK-002: GrabCAD download failed or empty file
-  ROK-003: GrabCAD download failed or empty file
-  ROK-005: GrabCAD download failed or empty file
-  RUS-006: GrabCAD download failed or empty file
-  RUS-007: GrabCAD download failed or empty file
-  RUS-011: CadNav: downloaded file too small (41 bytes): check log above
-  RUS-015: GrabCAD download failed or empty file
-  RUS-016: GrabCAD download failed or empty file
-  RUS-017: GrabCAD download failed or empty file
-  RUS-018: GrabCAD download failed or empty file
-  RUS-041: CadNav: downloaded file too small (41 bytes): check log above
-  RUS-046: CadNav: downloaded file too small (41 bytes): check log above
+  BRZ-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  BRZ-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  CHN-112: CadNav(41b): "You have exceeded today's download limit."
+  CHN-113: CadNav(41b): "You have exceeded today's download limit."
+  CHN-115: CadNav(41b): "You have exceeded today's download limit."
+  CHN-116: CadNav(41b): "You have exceeded today's download limit."
+  CHN-118: CadNav(41b): "You have exceeded today's download limit."
+  CHN-121: CadNav(41b): "You have exceeded today's download limit."
+  CHN-122: CadNav(41b): "You have exceeded today's download limit."
+  CHN-123: CadNav(41b): "You have exceeded today's download limit."
+  CHN-128: CadNav(41b): "You have exceeded today's download limit."
+  CHN-132: CadNav(41b): "You have exceeded today's download limit."
+  FRA-001: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-002: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-003: CadNav(41b): "You have exceeded today's download limit."
+  FRA-004: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-005: CadNav(41b): "You have exceeded today's download limit."
+  FRA-014: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-028: CadNav(41b): "You have exceeded today's download limit."
+  FRA-030: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-031: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  FRA-063: CadNav(41b): "You have exceeded today's download limit."
+  FRA-083: CadNav(41b): "You have exceeded today's download limit."
+  FRA-084: CadNav(41b): "You have exceeded today's download limit."
+  FRA-086: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  GBR-007: CadNav(41b): "You have exceeded today's download limit."
+  IND-001: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ITA-001: CadNav(41b): "You have exceeded today's download limit."
+  ITA-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ITA-007: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  POL-011: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ROK-002: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ROK-003: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  ROK-005: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-006: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-007: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-011: CadNav(41b): "You have exceeded today's download limit."
+  RUS-015: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-016: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-017: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-018: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-041: CadNav(41b): "You have exceeded today's download limit."
+  RUS-046: CadNav(41b): "You have exceeded today's download limit."
+  RUS-053: CadNav(41b): "You have exceeded today's download limit."
+  RUS-079: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
+  RUS-080: No GrabCAD session (check GRABCAD_SESSION + GRABCAD_XSRF secrets)
 
 Note: full body/diagnostic output is in GitHub Actions run log
