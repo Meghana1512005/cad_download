@@ -1,8 +1,9 @@
 """
-Search GrabCAD (email+password) and CadNav (category crawl)
+Search GrabCAD (email+password) and CadNav (category crawl with BeautifulSoup)
 for all models currently marked 'Not Found'.
 """
 import json, os, re, time, requests
+from bs4 import BeautifulSoup
 from grabcad_client import GrabCADClient
 
 DATA         = os.path.join(os.path.dirname(__file__), "..", "data", "models.json")
@@ -20,7 +21,7 @@ JUNK = re.compile(
 
 STOP = {'the','and','for','with','mk','type','class','series','model','version',
         'military','aircraft','helicopter','tank','vehicle','missile','system',
-        'new','mod','improved','advanced','main','battle'}
+        'new','mod','improved','advanced','main','battle','light','heavy','medium'}
 
 def word_score(a, b):
     wa = set(w.lower() for w in re.findall(r'[a-z0-9]+', a, re.I) if len(w) >= 2) - STOP
@@ -40,7 +41,7 @@ def fuzzy_queries(name, domain):
         queries.append(m.group(1))
     return queries[:3]
 
-# ── CadNav: category crawl ────────────────────────────────────────────────────
+# ── CadNav: category crawl using BeautifulSoup ────────────────────────────────
 print("Building CadNav index (crawling category pages)...")
 cn = requests.Session()
 cn.headers["User-Agent"] = AGENT
@@ -53,31 +54,49 @@ CADNAV_CATS = [
 ]
 
 cadnav_index = []
+
 for cat_name, cat_url in CADNAV_CATS:
     page = 1
     while page <= 50:
         url = cat_url if page == 1 else cat_url.rstrip('/') + f"/index-{page}.html"
         try:
             r = cn.get(url, timeout=15)
-            entries = re.findall(
-                r'href="/3d-models/model-(\d+)\.html"[^>]+title="([^"]+?) 3d model', r.text)
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            entries = []
+            # Strategy 1: all links to model pages
+            for a in soup.find_all("a", href=re.compile(r"/3d-models/model-\d+\.html")):
+                href = a.get("href", "")
+                mid_m = re.search(r"model-(\d+)\.html", href)
+                if not mid_m:
+                    continue
+                mid = mid_m.group(1)
+                # Prefer title attr, then link text, then parent h2 text
+                name = (a.get("title", "") or a.get_text(strip=True) or
+                        (a.find_parent("h2") or a).get_text(strip=True))
+                # Strip " 3d model download" suffix
+                name = re.sub(r'\s*3d model.*$', '', name, flags=re.I).strip()
+                if name and mid:
+                    entries.append((mid, name))
+
             if not entries:
-                entries = re.findall(
-                    r'href="/3d-models/model-(\d+)\.html">([^<]+)</a>', r.text)
-            if not entries:
-                break
+                break  # no more pages
+
+            # Deduplicate within this page
+            seen_page = set()
             for mid, mname in entries:
-                mname = mname.strip()
-                if mid and mname:
+                if mid not in seen_page and mname:
+                    seen_page.add(mid)
                     cadnav_index.append((mid, mname))
-            print(f"  {cat_name} page {page}: {len(entries)} models")
+
+            print(f"  {cat_name} page {page}: {len(seen_page)} models")
             time.sleep(0.4)
             page += 1
         except Exception as e:
             print(f"  {cat_name} page {page} error: {e}")
             break
 
-# Deduplicate
+# Global deduplicate
 seen_ids = set()
 cadnav_index = [(mid, mn) for mid, mn in cadnav_index
                 if mid not in seen_ids and not seen_ids.add(mid)]
@@ -141,7 +160,7 @@ not_found = [m for m in models if m.get("download_status") == "Not Found"]
 batch     = not_found[BATCH_START: BATCH_START + BATCH_SIZE]
 
 print(f"Not Found total : {len(not_found)}")
-print(f"Batch           : [{BATCH_START} : {BATCH_START + len(batch)}]  ({len(batch)} models)\n")
+print(f"Batch           : [{BATCH_START}:{BATCH_START+len(batch)}]  ({len(batch)} models)\n")
 
 found_cadnav = found_grabcad = 0
 

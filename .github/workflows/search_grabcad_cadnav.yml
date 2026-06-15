@@ -11,6 +11,10 @@ on:
         description: 'Models to search per run'
         required: false
         default: '500'
+      debug_only:
+        description: 'Run debug step only (true/false)'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -30,12 +34,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install requests
+      - run: pip install requests beautifulsoup4
 
-      - name: Show queue size
-        run: python3 scripts/debug_queue.py
+      - name: Debug CadNav + GrabCAD
+        env:
+          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
+          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
+        run: python scripts/debug_cadnav_grabcad.py
 
       - name: Search GrabCAD + CadNav
+        if: ${{ github.event.inputs.debug_only != 'true' }}
         env:
           GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
           GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
@@ -44,6 +52,7 @@ jobs:
         run: python scripts/search_grabcad_cadnav.py
 
       - name: Commit results
+        if: ${{ github.event.inputs.debug_only != 'true' }}
         run: |
           git config user.name  "CAD Bot"
           git config user.email "bot@cad-downloader"
