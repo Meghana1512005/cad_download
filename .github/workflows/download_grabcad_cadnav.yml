@@ -1,0 +1,86 @@
+name: 5 - Download GrabCAD + CadNav Models
+
+on:
+  push:
+    paths: ['data/models.json']
+  workflow_dispatch:
+    inputs:
+      batch_start:
+        description: 'Start index into Found queue'
+        required: false
+        default: '0'
+      batch_size:
+        description: 'Models to download per run'
+        required: false
+        default: '50'
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ github.token }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests trimesh
+
+      - name: Show queue
+        run: |
+          python3 -c "
+          import json
+          from collections import Counter
+          m = json.load(open('data/models.json'))
+          s = Counter(x.get('download_status') for x in m)
+          for k,v in sorted(s.items(), key=lambda x:-x[1]):
+              print(f'  {v:5d}  {k}')
+          q = [x for x in m if x.get('download_status') in ('Found on GrabCAD','Found on CadNav')]
+          print(f'Download queue: {len(q)}')
+          "
+
+      - name: Download models
+        env:
+          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
+          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
+          BATCH_START:  ${{ github.event.inputs.batch_start || '0' }}
+          BATCH_SIZE:   ${{ github.event.inputs.batch_size  || '50' }}
+        run: python scripts/download_grabcad_cadnav.py
+
+      - name: Show debug log
+        run: cat data/download_debug_gc_cn.txt || echo "No debug log"
+
+      - name: Collect files into release folder
+        run: |
+          mkdir -p release_files
+          find downloaded_models -type f \( -name "*.glb" -o -name "*.obj" -o -name "*.stl" \
+            -o -name "*.fbx" -o -name "*.dae" -o -name "*.zip" \) \
+            -exec cp {} release_files/ \;
+          echo "Files to release: $(ls release_files | wc -l)"
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: models-latest
+          files: release_files/*
+          overwrite: true
+
+      - name: Commit status update
+        run: |
+          git config user.name  "CAD Bot"
+          git config user.email "bot@cad-downloader"
+          git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          git add data/models.json data/download_debug_gc_cn.txt
+          git diff --staged --quiet && echo "NO CHANGES" || \
+            git commit -m "Download GrabCAD+CadNav batch ${{ github.event.inputs.batch_start || '0' }}: update status"
+          git pull --rebase origin main && git push || \
+            (git pull --rebase origin main && git push)

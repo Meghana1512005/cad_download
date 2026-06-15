@@ -1,0 +1,55 @@
+name: 4 - Search GrabCAD + CadNav
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_start:
+        description: 'Start index into Not Found list'
+        required: false
+        default: '0'
+      batch_size:
+        description: 'Models to search per run'
+        required: false
+        default: '500'
+
+permissions:
+  contents: write
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ github.token }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Show queue size
+        run: python3 scripts/debug_queue.py
+
+      - name: Search GrabCAD + CadNav
+        env:
+          GRABCAD_USER: ${{ secrets.GRABCAD_USER }}
+          GRABCAD_PASS: ${{ secrets.GRABCAD_PASS }}
+          BATCH_START:  ${{ github.event.inputs.batch_start || '0' }}
+          BATCH_SIZE:   ${{ github.event.inputs.batch_size  || '500' }}
+        run: python scripts/search_grabcad_cadnav.py
+
+      - name: Commit results
+        run: |
+          git config user.name  "CAD Bot"
+          git config user.email "bot@cad-downloader"
+          git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          git add data/models.json
+          git diff --staged --quiet && echo "No new models found" || \
+            git commit -m "Search GrabCAD+CadNav batch ${{ github.event.inputs.batch_start || '0' }}: update status"
+          git pull --rebase origin main && git push || \
+            (git pull --rebase origin main && git push)
