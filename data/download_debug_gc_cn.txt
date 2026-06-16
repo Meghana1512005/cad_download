@@ -1,11 +1,8 @@
-queue=527 batch=50 downloaded=3 failed=47 skipped=0
+queue=524 batch=50 downloaded=3 failed=47 skipped=0
 
 Errors:
   BRZ-005: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/emb-110-bandeirante/files/download?c body='{"error":"Not found"}'
   BRZ-016: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/embraer-emb-500-phenom/files/downloa body='{"error":"Not found"}'
-  CHN-116: CadNav(41b): "You have exceeded today's download limit."
-  CHN-118: CadNav(41b): "You have exceeded today's download limit."
-  CHN-121: CadNav(41b): "You have exceeded today's download limit."
   CHN-122: CadNav(41b): "You have exceeded today's download limit."
   CHN-123: CadNav(41b): "You have exceeded today's download limit."
   CHN-128: CadNav(41b): "You have exceeded today's download limit."
@@ -32,7 +29,7 @@ Errors:
   POL-011: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/pzl-130-orlik-tc-ii/files/download?c body='{"error":"Not found"}'
   ROK-002: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/annex-k1/files/download?cadid= body='{"error":"Not found"}'
   ROK-003: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/evtol-attack-aircraft-k21-concept-de body='{"error":"Not found"}'
-  ROK-005: GrabCAD: HTTP 404 url=https://grabcad.com/community/api/v1/models/kai-t-50-golden-eagle/files/download body='{"error":"Not found"}'
+  ROK-005: GrabCAD: HTTP 403 url=https://grabcad.com/library/kai-t-50-golden-eagle/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-006: GrabCAD: HTTP 403 url=https://grabcad.com/library/antonov-an-124-ruslan-condor/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-007: GrabCAD: HTTP 403 url=https://grabcad.com/library/vlmu5200-140/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-011: CadNav(41b): "You have exceeded today's download limit."
@@ -48,5 +45,8 @@ Errors:
   RUS-082: GrabCAD: HTTP 403 url=https://grabcad.com/library/mil-mi-17/download body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CON'
   RUS-083: CadNav(41b): "You have exceeded today's download limit."
   RUS-086: CadNav(41b): "You have exceeded today's download limit."
+  RUS-090: CadNav(41b): "You have exceeded today's download limit."
+  RUS-092: CadNav(41b): "You have exceeded today's download limit."
+  RUS-094: CadNav(41b): "You have exceeded today's download limit."
 
 Note: full body/diagnostic output is in GitHub Actions run log
