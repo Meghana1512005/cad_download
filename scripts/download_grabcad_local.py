@@ -79,6 +79,49 @@ def try_convert_to_glb(src, dst):
         print(f"    trimesh: {e}")
     return False
 
+def get_model_id(slug):
+    """Search for model by slug to get its numeric ID."""
+    query = slug.replace("-", " ")[:50]
+    try:
+        r = s.get("https://grabcad.com/community/api/v1/models",
+                  params={"query": query, "per_page": 10}, timeout=15)
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        items = data if isinstance(data, list) else data.get("models", data.get("results", []))
+        for m in items:
+            m_slug = m.get("slug") or m.get("url_identifier") or ""
+            if m_slug == slug:
+                return m.get("id")
+        if items:
+            return items[0].get("id")
+    except Exception as e:
+        print(f"    model ID lookup error: {e}")
+    return None
+
+def get_download_url(model_id, slug):
+    """Get direct download URL for a GrabCAD model via API."""
+    try:
+        r = s.get(f"https://grabcad.com/community/api/v1/models/{model_id}", timeout=15)
+        if r.status_code == 200:
+            detail = r.json()
+            # Look for files array
+            for key in ("files", "cad_files", "documents"):
+                files = detail.get(key, [])
+                if isinstance(files, list) and files:
+                    for f in files:
+                        url = f.get("download_url") or f.get("url") or f.get("public_url")
+                        if url:
+                            return url
+            # Some versions embed a direct download URL at top level
+            url = detail.get("download_url") or detail.get("file_url")
+            if url:
+                return url
+    except Exception as e:
+        print(f"    detail API error: {e}")
+    # Fallback: try the files/download endpoint with model_id
+    return f"https://grabcad.com/community/api/v1/models/{model_id}/files/download"
+
 def download_model(slug, uid):
     model_dir = os.path.join(OUT_DIR, uid)
     os.makedirs(model_dir, exist_ok=True)
@@ -87,9 +130,34 @@ def download_model(slug, uid):
     # Pre-visit model page to warm up session
     s.get(f"https://grabcad.com/library/{slug}", timeout=15)
 
-    # Download
-    r = s.get(f"https://grabcad.com/library/{slug}/download",
-              stream=True, timeout=120, allow_redirects=True)
+    # Step 1: try direct download (no redirect follow - capture redirect location)
+    r_check = s.get(f"https://grabcad.com/library/{slug}/download",
+                    allow_redirects=False, timeout=30)
+
+    download_url = None
+    if r_check.status_code in (200, 206):
+        # Direct file response
+        download_url = f"https://grabcad.com/library/{slug}/download"
+    elif r_check.status_code in (301, 302, 303, 307, 308):
+        loc = r_check.headers.get("Location", "")
+        if loc and ("s3.amazonaws.com" in loc or "grabcad" not in loc or "files/download" in loc):
+            download_url = loc
+            print(f"    redirect → {loc[:80]}")
+        else:
+            # Redirect to a page, not a file — use API instead
+            print(f"    redirect to page, trying API")
+
+    # Step 2: if no direct URL, look up via search API
+    if not download_url:
+        model_id = get_model_id(slug)
+        if model_id:
+            download_url = get_download_url(model_id, slug)
+            print(f"    API: model_id={model_id} url={str(download_url)[:60]}")
+        else:
+            return None, "could not find model ID"
+
+    # Step 3: download from resolved URL
+    r = s.get(download_url, stream=True, timeout=120, allow_redirects=True)
 
     if r.status_code != 200:
         return None, f"HTTP {r.status_code} at {r.url[:80]}"
