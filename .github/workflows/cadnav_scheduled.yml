@@ -1,8 +1,6 @@
 name: 6 - CadNav Scheduled Download (3 per run)
 
 on:
-  schedule:
-    - cron: '0 */2 * * *'   # every 2 hours = 12 runs/day = ~36 CadNav models/day
   workflow_dispatch:
     inputs:
       reset_position:
